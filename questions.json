@@ -1,0 +1,2199 @@
+{
+  "react": [
+    {
+      "id": 1,
+      "text": "What is the purpose of React?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "To style web pages", "isCorrect": false },
+        {
+          "id": 2,
+          "text": "Manage and render web and native UI",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "To handle server-side scripting",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "To create and manage databases",
+          "isCorrect": false
+        }
+      ],
+      "answer": "Manage and render web and native UI",
+      "explanation": "React is a free and open-source library for web and native user interfaces (UI). \nReact lets to build user interfaces out of individual pieces called components. \nReact components receive data and return what should appear on the screen. \nYou can pass them new data in response to an interaction, like when the user types into an input. \nReact will then update the screen to match the new data.",
+      "source": "https://react.dev"
+    },
+    {
+      "id": 2,
+      "text": "What does JSX stand for?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "JavaScript Syntax Extension", "isCorrect": false },
+        { "id": 2, "text": "JavaScript XML", "isCorrect": true },
+        { "id": 3, "text": "JavaScript Extension", "isCorrect": false },
+        { "id": 4, "text": "JavaScript Extended Syntax", "isCorrect": false }
+      ],
+      "answer": "JavaScript XML",
+      "explanation": "JSX (JavaScript XML, formally JavaScript Syntax eXtension) is an XML-like extension to the JavaScript language syntax. \nInitially created by Facebook for use with React, JSX has been adopted by multiple web frameworks",
+      "source": "https://en.wikipedia.org/wiki/JSX_(JavaScript)"
+    },
+    {
+      "id": 3,
+      "text": "How do you pass data to a component in React?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Using states", "isCorrect": false },
+        { "id": 2, "text": "Using functions", "isCorrect": false },
+        { "id": 3, "text": "Using props", "isCorrect": true },
+        { "id": 4, "text": "Using events", "isCorrect": false }
+      ],
+      "answer": "Using props",
+      "explanation": "React components use props to communicate with each other. \nEvery parent component can pass some information to its child components by giving them props. \nProps might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions. \nThe props you can pass to an &lt;img&gt; tag are predefined (ReactDOM conforms to the HTML standard). \nBut you can pass any props to your own components, such as &lt;Avatar&gt;, to customize them.",
+      "source": "https://react.dev/learn/passing-props-to-a-component"
+    },
+    {
+      "id": 4,
+      "text": "What Hooks means in React?",
+      "hasOptions": false,
+      "answer": "Hooks are special functions that are only available while React is Rendering. \nHooks—functions starting with use—can only be called at the top level of your components or your own Hooks. \nYou can’t call Hooks inside conditions, loops, or other nested functions. \nHooks are functions, but it’s helpful to think of them as unconditional declarations about your component’s needs. \nYou “use” React features at the top of your component similar to how you “import” modules at the top of your file.",
+      "explanation": "Hooks are special functions that are only available while React is Rendering. \nHooks—functions starting with use—can only be called at the top level of your components or your own Hooks. \nYou can’t call Hooks inside conditions, loops, or other nested functions. Hooks are functions, but it’s helpful to think of them as unconditional declarations about your component’s needs. \nYou “use” React features at the top of your component similar to how you “import” modules at the top of your file.",
+      "source": "https://react.dev/learn/state-a-components-memory"
+    },
+    {
+      "id": 5,
+      "text": "What is a state in React? (Name things for which it is responsible for)",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "A permanent storage", "isCorrect": false },
+        {
+          "id": 2,
+          "text": "Internal object to a component",
+          "isCorrect": true
+        },
+        { "id": 3, "text": "A way to change props", "isCorrect": false },
+        { "id": 4, "text": "A function to call APIs", "isCorrect": false }
+      ],
+      "answer": "Internal object to a component",
+      "explanation": "UseState Hook provides 2 things: 1) State variable retain the data between renders. \n2) State setter function updates the variable and trigger React to render the component again. \nBecause while changing some data like it is common in JS (let x....) - React doesn’t realize it needs to render the component again with the new data. \nWhen React renders this component a second time, it renders it from scratch—it doesn’t consider any changes to the local variables",
+      "source": "https://react.dev/learn/state-a-components-memory"
+    },
+    {
+      "id": 6,
+      "text": "Can React be used without a framework?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Yes. Because React is already a framework",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "No. Because React is a library",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "No. Because every app needs a framework",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Yes. But developers recommend using frameworks",
+          "isCorrect": true
+        }
+      ],
+      "answer": "Yes. But developers recommend using frameworks if you need routing, data fetching at first, etc.",
+      "explanation": "Even if you don’t need routing or data fetching at first, you’ll likely want to add some libraries for them. \nAs your JavaScript bundle grows with every new feature, you might have to figure out how to split code for every route individually. \nAs your audience includes more users with poor network conditions and low-end devices, you might need to generate HTML from your components to display content early—either on the server, or during the build time. \nChanging your setup to run some of your code on the server or during the build can be very tricky. These problems are not React-specific. \nThis is why Svelte has SvelteKit, Vue has Nuxt, and so on. To solve these problems on your own, you’ll need to integrate your bundler with your router and with your data fetching library.",
+      "source": "https://react.dev/learn/start-a-new-react-project"
+    },
+    {
+      "id": 7,
+      "text": "Which hook lets you keep your component synchronized with external systems?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "useState", "isCorrect": false },
+        { "id": 2, "text": "useEffect", "isCorrect": true },
+        { "id": 3, "text": "useContext", "isCorrect": false },
+        { "id": 4, "text": "useRef", "isCorrect": false }
+      ],
+      "answer": "useEffect",
+      "explanation": "An Effect lets you keep your component synchronized with some external system (like a chat service). \nHere, external system means any piece of code that’s not controlled by React, such as: \n1) A timer managed with setInterval() and clearInterval(). \n2) An event subscription using window.addEventListener() and window.removeEventListener(). \n3) A third-party animation library with an API like animation.start() and animation.reset().",
+      "source": "https://react.dev/reference/react/useEffect"
+    },
+    {
+      "id": 8,
+      "text": "What does React use under the hood to manage the DOM efficiently?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Real DOM", "isCorrect": false },
+        { "id": 2, "text": "Shadow DOM", "isCorrect": false },
+        { "id": 3, "text": "Virtual DOM", "isCorrect": true },
+        { "id": 4, "text": "Custom DOM", "isCorrect": false }
+      ],
+      "answer": "Virtual DOM",
+      "explanation": "Virtual DOM functions as an efficient alternative for updating the DOM in response to changes, significantly reducing the time required. \nTherefore, React uses Virtual DOM. It involves updating the JavaScript object directly.\nIt can produce 20000 virtual dom nodes in a second and created completely from scratch on every setState and dispatch.",
+      "source": "https://medium.com/@noyoncse3101/how-react-work-under-the-hood-9a6534a7fd77"
+    },
+    {
+      "id": 9,
+      "text": "What is Reconciliation process?",
+      "hasOptions": false,
+      "answer": "The process of generating a new virtual DOM tree and comparing the old and the new virtual DOM trees \nto register all the changes that need to be done to the real DOM.",
+      "explanation": "After every component update, React creates a new virtual DOM tree. \nIt then compares the old tree with the new tree to register all the changes that need to be done to the real DOM. \nThis process of generating a new tree and comparing is called reconciliation. \nReact uses a diffing algorithm in reconciliation process to compare both trees to effectively update the UI in a minimum number of operations.",
+      "source": "https://medium.com/@noyoncse3101/how-react-work-under-the-hood-9a6534a7fd77"
+    },
+    {
+      "id": 10,
+      "text": "What is the use of the useReducer hook in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Manage state in complex scenarios",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "No longer in use in v18 React and > vers.",
+          "isCorrect": false
+        },
+        { "id": 3, "text": "To perform side effects", "isCorrect": false },
+        {
+          "id": 4,
+          "text": "To fetch data and reduce it in a component",
+          "isCorrect": false
+        }
+      ],
+      "answer": "Manage state in complex scenarios: takes a reducer function and an initial state",
+      "explanation": "useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.",
+      "source": "https://react.dev/reference/react/useReducer"
+    },
+    {
+      "id": 11,
+      "text": "What are the key features of ReactJS?",
+      "hasOptions": false,
+      "answer": "1) component-based architecture, \n2)performance optimization by minimizing direct DOM manipulation (virtual DOM implementation) \n3) code reusability through reusable components \n4)declarative syntax \n5) JSX for easier UI development",
+      "explanation": "The key features of ReactJS are its component-based architecture, virtual DOM implementation for efficient rendering, \ncode reusability through reusable components, declarative syntax and JSX for easier UI development, \nunidirectional data flow for predictable updates, and performance optimization by minimizing direct DOM manipulation.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 12,
+      "text": "How do you import React in a file?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "import {React} from 'react'", "isCorrect": false },
+        { "id": 2, "text": "require('react')", "isCorrect": false },
+        { "id": 3, "text": "include React from 'react'", "isCorrect": false },
+        { "id": 4, "text": "import React from 'react'", "isCorrect": true }
+      ],
+      "answer": "import React from ”react”",
+      "explanation": "To use React in a file, you need to import it from the ”react” package. \nReact is the default export of the ”react” package, so you can import it using the following syntax: \nimport React from ”react”;",
+      "source": "https://react.dev"
+    },
+    {
+      "id": 13,
+      "text": "Which hook is used to update the user interface before a background operation, like a network request, completes?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "useReducer", "isCorrect": false },
+        { "id": 2, "text": "useContext", "isCorrect": false },
+        { "id": 3, "text": "useOptimistic", "isCorrect": true },
+        { "id": 4, "text": "useMemo", "isCorrect": false }
+      ],
+      "answer": "useOptimistic",
+      "explanation": "useOptimistic is a Hook that allows you to update the user interface before a background operation, like a network request, completes. \nThis can improve the perceived performance of your application by making it feel more responsive. \nIn the context of forms, this technique helps to make apps feel more responsive. When a user submits a form, instead of waiting for the server’s response to reflect the changes, the interface is immediately updated with the expected outcome.",
+      "source": "https://react.dev/reference/react/useOptimistic"
+    },
+    {
+      "id": 14,
+      "text": "Which hook is used to handle state in a functional component?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "useState", "isCorrect": true },
+        { "id": 2, "text": "useEffect", "isCorrect": false },
+        { "id": 3, "text": "useContext", "isCorrect": false },
+        { "id": 4, "text": "useMemo", "isCorrect": false }
+      ],
+      "answer": "useState",
+      "explanation": "useState is a Hook that allows you to retain data between renders and a function to update this data.",
+      "source": "https://react.dev/learn/state-a-components-memory"
+    },
+    {
+      "id": 15,
+      "text": "What is the use of keys in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "To group multiple elements in an array",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "To create an array of components",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "To identify unique elements in array",
+          "isCorrect": true
+        },
+        { "id": 4, "text": "To manage state", "isCorrect": false }
+      ],
+      "answer": "To identify unique elements in an array of components or elements that are rendered dynamically",
+      "explanation": "Keys tell React which array item each component corresponds to, so that it can match them up later. \nThis becomes important if your array items can move (e.g. due to sorting), get inserted, or get deleted. \nA well-chosen key helps React infer what exactly has happened, and make the correct updates to the DOM tree. \nRather than generating keys on the fly, you should include them in your data",
+      "source": "https://react.dev/learn/rendering-lists"
+    },
+    {
+      "id": 16,
+      "text": "Which frameworks support all the features you need to deploy and scale your React app in production and are working towards supporting our full-stack architecture vision?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Remix / Node.js / Expo / Gatsby.jsx",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Remix / Next.js / Gatsby / Expo",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Remix / Nest.jsx / Ionic / Angular",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Remix / Nesty.js / Gatsby / Expo",
+          "isCorrect": false
+        }
+      ],
+      "answer": "Remix / Next.js / Gatsby / Expo",
+      "explanation": "1)Remix is a full-stack React framework with nested routing. \nIt lets you break your app into nested parts that can load data in parallel and refresh in response to the user actions. \n2) Next.js’ Pages Router is a full-stack React framework. \nIt’s versatile and lets you create React apps of any size—from a mostly static blog to a complex dynamic application. \n3)Gatsby is a React framework for fast CMS-backed websites. \nIts rich plugin ecosystem and its GraphQL data layer simplify integrating content, APIs, and services into one website. \n4)Expo (for native apps) is a React framework that lets you create universal Android, iOS, and web apps with truly native UIs. \nIt provides an SDK for React Native that makes the native parts easier to use.",
+      "source": "https://react.dev/learn/start-a-new-react-project"
+    },
+    {
+      "id": 17,
+      "text": "What is the difference between React and other JavaScript frameworks/libraries?",
+      "hasOptions": false,
+      "answer": "1) ReactJS focuses solely on the view layer, allowing developers to integrate it easily with other libraries or frameworks. \n2)React also introduces the concept of a virtual DOM, which enhances performance by minimizing direct manipulation of the actual DOM.",
+      "explanation": "ReactJS differs from other JavaScript frameworks/libraries in several ways. \nIt focuses solely on the view layer, allowing developers to integrate it easily with other libraries or frameworks. \nReact also introduces the concept of a virtual DOM, which enhances performance by minimizing direct manipulation of the actual DOM.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 18,
+      "text": "What is the difference between props and state?",
+      "hasOptions": false,
+      "answer": "Props (short for properties) and state are both used in ReactJS to manage data, but they serve different purposes. \nProps are used to pass data from a parent component to a child component, while state is used to manage and update data within a component itself.",
+      "explanation": "React components use props to communicate with each other. \nEvery parent component can pass some information to its child components by giving them props. \nProps might remind you of HTML attributes, but you can pass any JavaScript value through them, including objects, arrays, and functions. \nProps let you think about parent and child components independently. ",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 19,
+      "text": "What are the components in React?",
+      "hasOptions": false,
+      "answer": "Components are the building blocks of a React application, allowing developers to create reusable and modular pieces of UI.",
+      "explanation": "Components are one of the core concepts of React. \nThey are the foundation upon which developer build user interfaces(UI). \nReact supports all of the browser built-in HTML and SVG components. \nAll of the built-in browser components support some props and events. \nYou can create a custom HTML elements",
+      "source": "https://react.dev/learn/your-first-component"
+    },
+    {
+      "id": 20,
+      "text": "How to share one state between two different components?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "By lifting state up", "isCorrect": true },
+        { "id": 2, "text": "By using Refs", "isCorrect": false },
+        { "id": 3, "text": "By using Context", "isCorrect": false },
+        { "id": 4, "text": "By using Memo Hook", "isCorrect": false }
+      ],
+      "answer": "By lifting state up",
+      "explanation": "Lifting state up is a technique in React for sharing state between two different components. \nTo lift state up, remove state from both of components, move it to their closest common parent, and then pass it down to them via props.  \nThis is known as lifting state up, and it’s one of the most common things developers do writing React code",
+      "source": "https://react.dev/learn/sharing-state-between-components#controlled-and-uncontrolled-components"
+    },
+    {
+      "id": 21,
+      "text": "What is a controlled component in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "A component that controls its own state",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "A component that controlled by parent",
+          "isCorrect": true
+        },
+        { "id": 3, "text": "A component with no state", "isCorrect": false },
+        {
+          "id": 4,
+          "text": "A component that handles events",
+          "isCorrect": false
+        }
+      ],
+      "answer": "A component that controlled by parent",
+      "explanation": "It is common to call a component with some local state “uncontrolled”. \nIn contrast, you might say a component is “controlled” when the important information in it is driven by props rather than its own local state. \nThis lets the parent component fully specify its behavior. \nUncontrolled components are easier to use within their parents because they require less configuration. \nBut they’re less flexible when you want to coordinate them together. \nControlled components are maximally flexible, but they require the parent components to fully configure them with props.",
+      "source": "https://react.dev/learn/sharing-state-between-components#controlled-and-uncontrolled-components"
+    },
+    {
+      "id": 22,
+      "text": "What are the differences between useRef and useState?",
+      "hasOptions": false,
+      "answer": "1) useRef is `mutable`, while useState - `immmutable`. \n2)useRef doesn`t trigger re-renders | useState triggers re-renders",
+      "explanation": "1) useRef is `mutable` = you can modify and update current’s value, \nwhile useState - `immmutable` = you must use the state setting function to modify state. \n2) useRef does not trigger re-renders when its value changes, \nwhile useState triggers re-renders when its value changes.",
+      "source": "https://react.dev/learn/referencing-values-with-refs#differences-between-refs-and-state"
+    },
+    {
+      "id": 23,
+      "text": "Explain the concept of React Hooks and their benefits",
+      "hasOptions": false,
+      "answer": "Benefits: \n1) Simplify the logic and structure of components \n2) Reduce the need for class components \n3) Improve code reusability and maintainability \n4) Enhance performance and optimization",
+      "explanation": "React Hooks (introduced in React 16.8) are defined using JavaScript functions, but they represent a special type of reusable UI logic with restrictions on where they can be called. \nBenefits: \n1) Simplify the logic and structure of components \n2) Reduce the need for class components \n3) Improve code reusability and maintainability \n4) Enhance performance and optimization",
+      "source": "https://react.dev/reference/rules/rules-of-hooks"
+    },
+    {
+      "id": 24,
+      "text": "Can web browsers read JSX directly?",
+      "hasOptions": false,
+      "answer": "No. Web browsers cannot read JSX directly. \nThis is because they are built to only read regular JS objects and JSX is not a regular JavaScript object.",
+      "explanation": "JSX is not a regular JavaScript object. \nJSX and JS are not the same, although they share some similarities. Here are the key differences: \n1)Usage: JSX is primarily used in React applications for defining the structure and behavior of UI components. \nIt is the preferred way to write components in React. \nJS, on the other hand, can be used for various purposes in JavaScript development, such as defining functions, variables, and logic. \n2)Transformation: JSX code needs to be transformed into regular JavaScript code before it can be executed by the browser or JavaScript engine. \nFor this transformation you’ll need a transpiler. \nJS code, on the other hand, can be executed directly by the browser or JavaScript engine without any transformation. \n**While JSX is the commonly used syntax for writing React components, it is possible to write React components using pure JavaScript without JSX.**",
+      "source": "https://medium.com/@ykods/is-js-and-jsx-the-same-97e4df644609"
+    },
+    {
+      "id": 25,
+      "text": "Explain how the event propagation works",
+      "hasOptions": false,
+      "answer": "Event handlers catch events from any children your component might have. \nEvent “bubbles” or “propagates” up &uarr; the tree: it starts with where the event happened, and then goes up the tree",
+      "explanation": "For example: &lt;div&gt; contains two buttons, and both: the &lt;div&gt; and each button have their own onClick handlers. \nIf you click on either button, its onClick will run first, followed by the parent &lt;div&gt;”s onClick \n**All events propagate in React except `onScroll`, which only works on the JSX tag you attach it to.**",
+      "source": "https://react.dev/learn/responding-to-events"
+    },
+    {
+      "id": 26,
+      "text": "What is the difference between e.stopPropagation() and e.preventDefault()?",
+      "hasOptions": false,
+      "answer": "e.stopPropagation() stops the event from bubbling up the DOM tree, while e.preventDefault() prevents the default browser behavior for the few events that have it.",
+      "explanation": "For preventing an event from reaching parent components `e.stopPropagation()` should be called. \n `e.stopPropagation()`, preventing the event from bubbling further. \n Some browser events have default behavior associated with them. \nFor example, a &lt;form&gt; submit event, which happens when a button inside of it is clicked, will reload the whole page by default. \nTo stop this from happening `e.preventDefault()` should be called.",
+      "source": "https://react.dev/learn/responding-to-events"
+    },
+    {
+      "id": 27,
+      "text": "How to add an event handler in React?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "onEvent={handleEvent}", "isCorrect": false },
+        {
+          "id": 2,
+          "text": "addEventHandler={handleEvent}",
+          "isCorrect": false
+        },
+        { "id": 3, "text": "onClick={handleClick}", "isCorrect": true },
+        { "id": 4, "text": "onClick={handleClick()}", "isCorrect": false }
+      ],
+      "answer": "onClick={handleClick}",
+      "explanation": "onClick={handleClick} = tells React to remember function handleClick and only call it when the user clicks to the element. \n onClick={handleClick()} - is wrong, because it calls handleClick immediately, during rendering, without any clicks from the user. \nSecond way to add the event handler is by passing inline code directly to the element: onClick={() => alert(’’...’’)}> passes the () => alert(’’...’’) function",
+      "source": "https://react.dev/learn/responding-to-events"
+    },
+    {
+      "id": 28,
+      "text": "What is the purpose of useTransition?",
+      "hasOptions": false,
+      "answer": "useTransition is a React Hook that allows to update the state without blocking the UI.",
+      "explanation": "Transitions allow to keep user interface responsive even on slow devices or in the middle of a re-render. \nFor example, if the user clicks a tab but then change their mind and click another tab, they can do that without waiting for the first re-render to finish. \nWithout useTransition in such case - the app freezes while rendering and the UI becomes unresponsive",
+      "source": "https://react.dev/reference/react/useTransition"
+    },
+    {
+      "id": 29,
+      "text": "How is deferring useDeferredValue from debouncing and throttling?",
+      "hasOptions": false,
+      "answer": "useDeferredValue shows stale content while fresh content is loading, but unlike debouncing or throttling, it: \n1)Doesn’t require choosing any fixed delay. \n2)Is interruptible by default.",
+      "explanation": "Debouncing means app will wait for the user to stop typing (e.g. for a second) before updating the list. \nThrottling means updating the list every once in a while (e.g. at most once a second). \nWhile these techniques are helpful in some cases, useDeferredValue is better suited to optimizing rendering, because it is deeply integrated with React itself and adapts to the user’s device: \n1)nIf the user’s device is fast (e.g. powerful laptop), the deferred re-render would happen almost immediately and wouldn’t be noticeable. \nIf the user’s device is slow, the list would “lag behind” the input proportionally to how slow the device is. \n2)useDeferredValue is interruptible by default. This means that if React is in the middle of re-rendering a large list, but the user makes another keystroke, \nReact will abandon that re-render, handle the keystroke, and then start rendering in the background again. \nBy contrast, debouncing and throttling still produce a janky experience because they’re blocking: they merely postpone the moment when rendering blocks the keystroke.",
+      "source": "https://react.dev/reference/react/useDeferredValue"
+    },
+    {
+      "id": 30,
+      "text": "What are event handlers in React and how to use them?",
+      "hasOptions": false,
+      "answer": "React lets developers to add event handlers to JSX code. \nEvent handlers are custom functions that will be triggered in response to interactions like clicking, hovering, focusing form inputs, and so on. \nTo add an event handler - define a function and then pass it as a prop to the appropriate JSX tag. \nOr pass inline code directly to the element.",
+      "explanation": "For example: function handleClick() {alert(...)} ... &lt;button onClick={handleClick}&gt;Click me&lt;/button&gt;  \n or inline: &lt;button onClick={() => alert(’’...’’)}&gt;Click me&lt;/button&gt;",
+      "source": "https://react.dev/learn/responding-to-events"
+    },
+    {
+      "id": 31,
+      "text": "What is the correct way to lift state up in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Moving the state to a child component",
+          "isCorrect": false
+        },
+        { "id": 2, "text": "Using a global variable", "isCorrect": false },
+        { "id": 3, "text": "Using localStorage", "isCorrect": false },
+        {
+          "id": 4,
+          "text": "Moving the state to a common ancestor",
+          "isCorrect": true
+        }
+      ],
+      "answer": "Moving the state to a common ancestor component",
+      "explanation": "Remove state from the component, move it to its closest ancestor, and then pass it down via props",
+      "source": "https://react.dev/learn/sharing-state-between-components#controlled-and-uncontrolled-components"
+    },
+    {
+      "id": 32,
+      "text": "What are portals in React? When would you use them?",
+      "hasOptions": false,
+      "answer": "Portal lets you render some children into a different part of the DOM.",
+      "explanation": "Portals in React provide a way to render children components into a different DOM node, outside the current component”s DOM hierarchy. \nThey allow you to render components at a different location in the DOM, which is useful for scenarios like modals, popovers, or tooltips, \nwhere the component needs to be positioned relative to a specific DOM element outside its parent. \nA portal only changes the physical placement of the DOM node. \nIn every other way, the JSX that renders in a portal acts as a child node of the React component that renders it. \nFor example, the child can access the context provided by the parent tree, and events bubble up from children to parents according to the React tree.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 33,
+      "text": "How can you create a functional component in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Greeting extends React.createComponent {.}",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "export default function Greeting() {...}",
+          "isCorrect": true
+        },
+        { "id": 3, "text": "const Greeting = () => {}", "isCorrect": false },
+        { "id": 4, "text": "Both 1 and 2 are correct", "isCorrect": false }
+      ],
+      "answer": "export default function Greeting() {...}",
+      "explanation": "Component could be created by defining a function that returns JSX. \nClass components (class Greeting extends Component {....}) are still supported by React, but it is not recommended to use them in a new code.",
+      "source": "https://react.dev/learn/your-first-component"
+    },
+    {
+      "id": 34,
+      "text": "What is the purpose of the useLayoutEffect hook in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "To manage state in a functional component",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Handle side effects in functional component",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "To update UI synchronously",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "To update UI asynchronously",
+          "isCorrect": false
+        }
+      ],
+      "answer": "To update the UI synchronously before the browser paints",
+      "explanation": "Most components don’t need to know their position and size on the screen to decide what to render. They only return some JSX. \nThen the browser calculates their layout (position and size) and repaints the screen. \nReact guarantees that the code inside useLayoutEffect and any state updates scheduled inside it will be processed before the browser repaints the screen. \nThis lets to render the element, measure it, and re-render it again without the user noticing the first extra render. \nIn other words, useLayoutEffect blocks the browser from painting. \n**useLayoutEffect can hurt performance (because it blocks the browser from painting), so it is better to use useEffect in every possible case**",
+      "source": "https://react.dev/reference/react/useLayoutEffect"
+    },
+    {
+      "id": 35,
+      "text": "What is the purpose of the useCallback hook in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Memoize functions & prevent re-renders",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Manage state in a functional component",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Handle side effects in functional component",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Update UI before background operation 🏁",
+          "isCorrect": false
+        }
+      ],
+      "answer": "Memoize functions & prevent unnecessary re-renders",
+      "explanation": "useCallback(fn, dependencies) - On the initial render, useCallback returns the function that has been passed. \nDuring subsequent renders, it will either return an already stored function from the last render (if the dependencies haven’t changed), \nor return the function that has been passed during this render. \nIn other words, useCallback caches a function between re-renders until its dependencies change. \n**Note that useCallback does not prevent creating the function: there ia always a creation of a function (and that’s fine!), \nbut React ignores it and gives a cached function if nothing changed in dependencies.**",
+      "source": "https://react.dev/reference/react/useCallback"
+    },
+    {
+      "id": 36,
+      "text": "How is useCallback related to useMemo?",
+      "hasOptions": false,
+      "answer": "They both are useful for preventing unnecessary re-renders and avoiding unnecessary calculations. They both cache some data, the difference is in what they’re letting to cache:. \nuseMemo caches the result of calling some function. useCallback caches the function itself.",
+      "explanation": "By default, when a component re-renders, React re-renders all of its children recursively. \nThis is fine for components that don’t require much calculation to re-render, but in other cases it is better to optimize code. \nuseMemo &amp; useCallback are both useful during optimization of a child component. \nThey let to memoize (or, in other words, cache) something that is passing down. \nThe difference is in what they’re letting to cache: \nuseMemo caches the result of calling some function. useCallback caches the function itself.",
+      "source": "https://react.dev/reference/react/useCallback"
+    },
+    {
+      "id": 37,
+      "text": "Why React uses className over class attribute?",
+      "hasOptions": false,
+      "answer": "React uses className instead of class in HTML because class is a reserved keyword in JavaScript. \nUsing class would cause conflicts with JavaScript syntax.",
+      "explanation": "To avoid conflicts with JavaScript syntax, React uses className for specifying CSS classes on elements. \nThis allows developers to apply CSS classes to React components without running into conflicts or JavaScript errors.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 38,
+      "text": "What are inline conditional expressions?",
+      "hasOptions": false,
+      "answer": "In JSX, it is possible to include JavaScript expression within curly braces and use it with ternary operators to conditionally render elements",
+      "explanation": "JavaScript has a compact syntax for writing a conditionally render expression — the conditional (ternary) operator: {`isSomething` ? ... : ...} ",
+      "source": "https://react.dev/learn/conditional-rendering"
+    },
+    {
+      "id": 39,
+      "text": "How do you conditionally render a component in React?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Using if-else statements", "isCorrect": false },
+        { "id": 2, "text": "Using the ternary operator", "isCorrect": false },
+        { "id": 3, "text": "Using && logical operator", "isCorrect": false },
+        { "id": 4, "text": "All of the above", "isCorrect": true }
+      ],
+      "answer": "All of the above",
+      "explanation": "In React, is possible to control branching logic with JavaScript. \nIf in the component there is a necessity to display different things depending on different conditions - elements could be rendered with conditions. \nConditionally render JSX uses JavaScript syntax like if statements, logical &amp;&amp; operator, and ternary operators.",
+      "source": "https://react.dev/learn/conditional-rendering"
+    },
+    {
+      "id": 40,
+      "text": "Can a nested child component access the state of its sibling component?",
+      "hasOptions": false,
+      "answer": "No, state should be lifted up to a common ancestor & pass it down as props to both siblings",
+      "explanation": "In React, components can only pass data down to their children through props. \nIf a nested child component needs to access the state of its sibling component, the state should be lifted up to a common ancestor and passed down as props to both siblings. \nThis ensures that the state is shared between the sibling components and that they stay in sync with each other.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 41,
+      "text": "What are the differences between React and React Native?",
+      "hasOptions": false,
+      "answer": "React Native allows to create native apps, while React builds web user interfaces.",
+      "explanation": "React is a JavaScript library used for building web user interfaces, while React Native is a framework for developing native mobile applications. \nReact renders components to the web browser using virtual DOM, while React Native renders components directly to native UI elements \nfor iOS and Android platforms, resulting in a more native-like experience.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 42,
+      "text": "What is the purpose of useContect hook in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Manage state in a functional component",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Handle side effects in functional component",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Share data between components without props",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "Update UI before a background operation 🏁",
+          "isCorrect": false
+        }
+      ],
+      "answer": "Share data between components without passing props through every level of the component tree",
+      "explanation": "useContext is a React Hook that provides a way to pass data through the component tree without having to pass props down manually at every level. \nThis can be useful for sharing global data, such as themes, user authentication, or language preferences, across multiple components in an application.",
+      "source": "https://react.dev/reference/react/useContext"
+    },
+    {
+      "id": 43,
+      "text": "What is the purpose of lazy loading in React?",
+      "hasOptions": false,
+      "answer": "To defer loading component’s code until it is rendered for the first time.",
+      "explanation": "lazy returns a React component that can be render in your tree. While the code for the lazy component is still loading, attempting to render it will suspend. Use &lt;Suspense&gt; to display a loading indicator while it’s loading.",
+      "source": "https://react.dev/reference/react/lazy"
+    },
+    {
+      "id": 44,
+      "text": "How to optimize the performance of React applications?",
+      "hasOptions": false,
+      "answer": "Performance optimization techniques for React Applications: \n1) Memoization (useMemo and useCallback). \n2) Code splitting. \n3) Lazy loading. \n4) Pure Components. \n5)Webpack optimizations",
+      "explanation": "1) Memoization (useMemo and useCallback)- caching the results of expensive functions or computations based on their inputs.\nBy avoiding redundant calculations, memoization can significantly improve performance \n2) Code-splitting: React applications can be split into smaller code bundles based on routing or functionality. \nThis allows the browser to load only the necessary code for the initial render, improving initial load times. \n3)Lazy Loading: this strategy involves loading components only when they are needed. \nThis can be particularly beneficial for components that are not immediately visible on the page or are used less frequently. \nReact’s built-in lazy and Suspense features can be used for lazy loading components. \n4)Pure Components: React is designed around this concept. \nReact assumes that every component is a pure function. \n5)Webpack optimizations: Webpack is a popular module bundler used in React development. \nIt offers various optimization techniques like code minification, tree-shaking, and code splitting to reduce the size of the final bundle and improve loading times.",
+      "source": "https://blog.stackademic.com/react-performance-optimization-techniques-tools-and-best-practices-b6e224607fb6"
+    },
+    {
+      "id": 45,
+      "text": "What do these three dots (...) in React do?",
+      "hasOptions": false,
+      "answer": "The three dots (...) in React are called the spread operator and can be used to make copies of objects or arrays.",
+      "explanation": "Spread operator helps to make copies of objects or arrays. \nWith objects, it lets to create a new object by copying properties from an existing object and adding or changing specific ones. \nFor arrays, it allows to create a new array by combining elements from different arrays. \nThe spread operator is handy for manipulating data in React and simplifies tasks like updating component state or merging objects with new properties.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 46,
+      "text": "Does React re-render all components and sub components every time setState is called?",
+      "hasOptions": false,
+      "answer": "No. It only re-renders the components that are affected by the state change",
+      "explanation": "No. React does not re-render all components and subcomponents every time setState is called. \nIt only re-renders the components that are affected by the state change, optimizing performance by avoiding unnecessary updates.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 47,
+      "text": "What is the purpose of the useRef hook in React?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Manage state in a functional component",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "To store information between re-renders",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Handle side effects in functional component",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Update UI before a background operation 🏁",
+          "isCorrect": false
+        }
+      ],
+      "answer": "To store information between re-renders",
+      "explanation": "useRef is a React Hook that allows you to store information between re-renders of a component. \nIt is useful for accessing DOM elements, managing focus, and storing mutable values that do not trigger re-renders. \nThat is the main difference between useRef and useState: nuseRef does not trigger re-renders when its value changes. \nThis means refs are perfect for storing information that doesn’t affect the visual output of your component. \nFor example, if there is a need to store an interval ID and retrieve it later, it can be stored in a ref.",
+      "source": "hhttps://react.dev/reference/react/useRef"
+    },
+    {
+      "id": 48,
+      "text": "In which Hook information is local to each copy of the component (unlike the variables outside, which are shared)?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "useState", "isCorrect": false },
+        { "id": 2, "text": "useEffect", "isCorrect": false },
+        { "id": 3, "text": "useContext", "isCorrect": false },
+        { "id": 4, "text": "useRef", "isCorrect": true }
+      ],
+      "answer": "useRef",
+      "explanation": "useRef is a Hook that allows to store mutable values that persist for the entire lifetime of the component. \nIt is useful for accessing DOM elements, managing focus, and storing mutable values that do not trigger re-renders. \nUnlike variables declared outside of a component, the values stored in a ref are local to each copy of the component.",
+      "source": "https://react.dev/reference/react/useRef"
+    },
+    {
+      "id": 49,
+      "text": "What is the difference between useContext and useState?",
+      "hasOptions": false,
+      "answer": "useState hook allows components to maintain and update their internal state, while the useContext hook facilitates the consumption of context values without excessive nesting.",
+      "explanation": "useState is a Hook that allows components to maintain and update their internal state. \nuseContext is a Hook that facilitates the consumption of context values without excessive nesting. \nuseState is used to manage local component state, while useContext is used to access global state that is shared across multiple components.",
+      "source": "https://www.linkedin.com/pulse/understanding-usestate-usecontext-react-hooks-state-emmanuel-akinroye#:~:text=The%20useState%20hook%20allows%20components,more%20efficient%20and%20maintainable%20applications"
+    },
+    {
+      "id": 50,
+      "text": "What is the main difference between `string refs` and `callback refs` in React.",
+      "hasOptions": false,
+      "answer": "The main difference is that string refs rely on a string identifier, while callback refs use a function to capture the reference.",
+      "explanation": "useRef helps to store information between re-renders. \nCallback refs are more flexible and allow for better control and manipulation of the reference, making them the preferred method in React \nwhereas using string refs approach is considered legacy and is not recommended in newer versions of React. \nCallback refs are particularly useful to access properties or methods that are not directly available through props. \nThey give an ability to interact with the underlying DOM elements or component instances directly. \nFor example, callback refs can be used to focus an input element programmatically. \nThis is especially useful when there is a need to trigger the focus behavior from a button click or other events.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    }
+  ],
+  "javascript": [
+    {
+      "id": 1,
+      "text": "What is Virtual DOM and how it is differ from Real Dom?",
+      "hasOptions": false,
+      "answer": "Virtual DOM is not an actual DOM, but a representation of actual DOM which is kept in memory (Virtual DOM = lightweight copy of the actual DOM, maintained by React). \nIt is extremely faster and efficient compare to the browser DOM, as updating a virtual DOM does not require heavy web browser processing like painting and recalibrating the space.",
+      "explanation": "Virtual DOM is nothing but a Javascript (JSON) object that is a representation of the browser DOM. \nIt is extremely faster and efficient compare to the browser DOM, as updating a virtual DOM does not require heavy web browser processing like painting and recalibrating the space. \nIt involves updating the JavaScript object directly. \nIt can produce 20000 virtual dom nodes in a second and created completely from scratch on every setState and dispatch. \nEvery time a React component updates, React builds a new tree in memory. \nCreating JavaScript objects in memory on every update is much faster than updating the actual DOM since DOM operations are expensive to perform.",
+      "source": "https://medium.com/@noyoncse3101/how-react-work-under-the-hood-9a6534a7fd77"
+    },
+    {
+      "id": 2,
+      "text": "What is the difference between ’’==’’ and ’’===’’ operators in JavaScript?",
+      "hasOptions": false,
+      "answer": "’’==’’ is an equality operator that compares two values for equality after converting them to a common type. \n”===’’ is a strict equality operator that compares two values for equality without converting their types. \nFor example, ”1” == 1 is true, but ”1” === 1 is false.",
+      "explanation": "’’==’’ is an equality operator that compares two values for equality after converting them to a common type. \n”===’’ is a strict equality operator that compares two values for equality without converting their types. \nFor example, ”1” == 1 is true, but ”1” === 1 is false.",
+      "source": "GitHub Copilot"
+    },
+    {
+      "id": 3,
+      "text": "What is the difference between ”null” and ”undefined” in JavaScript?",
+      "hasOptions": false,
+      "answer": "”null” represents the absence of a value. \n”undefined” is a variable that has been declared but has not been assigned a value.",
+      "explanation": "”null” is an explicit value that represents the absence of a value. \n”undefined” is a variable that has been declared but has not been assigned a value. \nIn JavaScript, ”null” is a value that represents the intentional absence of any object value, while ”undefined” is a type that represents an uninitialized or undeclared value.",
+      "source": "GitHub Copilot"
+    },
+    {
+      "id": 4,
+      "text": "What is the difference between HTML and XML",
+      "hasOptions": false,
+      "answer": "XML = eXtensible Markup Language, HTML = HyperText Markup Language, \nXML is more flexible and extensible than HTML, as it allows users to define their own tags and attributes.",
+      "explanation": "XML = eXtensible Markup Language, is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. \nHTML = HyperText Markup Language, is the standard markup language for documents designed to be displayed in a web browser. \nXML is more flexible and extensible than HTML, as it allows users to define their own tags and attributes. \nHTML is more focused on the presentation of content, while XML is more focused on the structure and organization of data.",
+      "source": "GitHub Copilot"
+    },
+    {
+      "id": 5,
+      "text": "Where is the correct place to insert a JavaScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "The <head> section", "isCorrect": false },
+        { "id": 2, "text": "The <body> section", "isCorrect": false },
+        {
+          "id": 3,
+          "text": "Both the <head> section and the <body> section are correct",
+          "isCorrect": true
+        },
+        { "id": 4, "text": "The <footer> section", "isCorrect": false }
+      ],
+      "answer": "Both the <head> section and the <body> section are correct",
+      "explanation": "Placing JavaScript in the &lt;head&gt; section is suitable for scripts that need to be loaded before the content of the page. \nCommon use cases include defining variables, initializing settings, or loading libraries required by the entire page. \nHowever, keep in mind that including heavy JavaScript files here may delay the rendering of page content. \nPlacing JavaScript just before the closing &lt;/body&gt; tag is a common practice as it ensures that the page content loads before the script executes. \nThis approach enhances the perceived page load time and improves user experience.",
+      "source": "ChatGPT",
+      "source2": "https://www.linkedin.com/pulse/where-correct-place-insert-javascript-frontend-interview-questions-lewfc"
+    },
+    {
+      "id": 6,
+      "text": "What is the purpose of the array slice method?",
+      "hasOptions": false,
+      "answer": "The slice() method returns the selected elements in an array as a new array object",
+      "explanation": "The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) \nwhere start and end represent the index of items in that array: slice(start, end). \nThe original array will not be modified.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"
+    },
+    {
+      "id": 7,
+      "text": "How do you call a function named ”myFunction”?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "call myFunction()", "isCorrect": false },
+        { "id": 2, "text": "call function myFunction()", "isCorrect": false },
+        { "id": 3, "text": "myFunction()", "isCorrect": true },
+        { "id": 4, "text": "function myFunction()", "isCorrect": false }
+      ],
+      "answer": "myFunction()",
+      "explanation": "To call a function named ”myFunction”, you simply write the function name followed by parentheses: myFunction(). \nThis syntax executes the function and runs the code inside it.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 8,
+      "text": "How do you convert a string to a number in JavaScript?",
+      "hasOptions": false,
+      "answer": "You can convert a string to a number in JavaScript using the parseInt() or parseFloat() functions, or just use the Number() constructor.",
+      "explanation": "The parseInt() function parses a string argument and returns an integer of the specified radix. \nParseInt only returns whole numbers - decimal part is truncated, whitespace or leading zeros are ignored. \nThe parseFloat() function parses a string argument and returns a floating point number. \nJavaScript does not have the distinction of ”floating point numbers” and ”integers” on the language level: parseInt() and parseFloat() only differ in their parsing behavior, but it is not necessary that they will return different values. \nFor example: \nconst str = ”42”; \nconst num1 = parseInt(str); // 42 \nconst num2 = parseFloat(str); // 42 \nconst num3 = Number(str); // 42",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt"
+    },
+    {
+      "id": 9,
+      "text": "How does a while loop start?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "while (i++ <= 10)", "isCorrect": false },
+        { "id": 2, "text": "while i = 1 to 10", "isCorrect": false },
+        { "id": 3, "text": "while (i <= 10)", "isCorrect": true },
+        { "id": 4, "text": "while (i <= 10; i++)", "isCorrect": false }
+      ],
+      "answer": "while (i <= 10)",
+      "explanation": "A while loop starts with the keyword ”while”, followed by a condition in parentheses. \nThe loop will continue to run as long as the condition evaluates to true. \nIn this case, the loop will run as long as the variable ”i” is less than or equal to 10.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 10,
+      "text": "How do you round the number 7.25, to the nearest integer?",
+      "hasOptions": false,
+      "answer": "To the nearest integer the floating number is rounded by using the Math.round() method.",
+      "explanation": "The Math.round() method rounds a number to the nearest integer. \nIf the fractional portion of the argument is greater than 0.5, the argument is rounded to the integer with the next higher absolute value. \nIf it is less than 0.5, the argument is rounded to the integer with the lower absolute value. \nIf the fractional portion is exactly 0.5, the argument is rounded to the next integer in the direction of +∞. \n**This differs from many languages” round() functions, which often round half-increments away from zero, giving a different result in the case of negative numbers with a fractional part of exactly 0.5.**",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round",
+      "source2": "GitHub Copilot"
+    },
+    {
+      "id": 11,
+      "text": "What is the correct JavaScript syntax for opening a new window called ”myWindow”?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "myWindow = window.new(”url”);",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "myWindow = window.open(”url”);",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "myWindow = window.create(”url”).open(”url);",
+          "isCorrect": false
+        },
+        { "id": 4, "text": "myWindow = new.window(”url”);", "isCorrect": false }
+      ],
+      "answer": "myWindow = window.open(”url”);",
+      "explanation": "The Window interface represents a window containing a DOM document; the document property points to the DOM document loaded in that window. \nTo open a new window in JavaScript, the window.open() method should be used. \nThis method creates a new browser window or a new tab, depending on the browser settings. \nSyntax: open(url, target, windowFeatures), url - link \ntarget - string, without whitespace, specifying the name of the browsing context the resource is being loaded into. \nwindowFeatures - parameters, like width, height, left, top, popup window etc. \nFor example: myWindow = window.open(””https://www.example.com””, ””mozillaWindow””, ””width=320,height=320””)",
+      "source": "GitHub Copilot",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/API/Window/open"
+    },
+    {
+      "id": 12,
+      "text": "How do you find the number with the highest value of x and y?",
+      "hasOptions": false,
+      "answer": "The Math.max() static method returns the largest of the numbers given as input parameters,",
+      "explanation": "The Math.max() function returns the largest of the given numbers. \nIt can be used to find the highest value among a set of numbers. \nReturns NaN if any of the parameters is or is converted into NaN. \nReturns -Infinity if no parameters are provided. \nFor example: Math.max(1, 3, 2) - return 3",
+      "source": "GitHub Copilot",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max"
+    },
+    {
+      "id": 13,
+      "text": "What is the correct JavaScript syntax to change the content of of the HTML element below? \n<p id=”demo”>This is a demonstration.</p>",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "document.getElement(”p”).innerHTML = ”Hello World!’’;",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "document.getElementByName(’’.demo”).innerHTML = ”Hello World!’’;",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "document.getElementById(”demo”).innerHTML = ”Hello World!’’;",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "document.getElementTagName(”p”).innerHTML = ”Hello World!’’;",
+          "isCorrect": false
+        }
+      ],
+      "answer": "document.getElementById(”demo”).innerHTML = ”Hello World!’’;",
+      "explanation": "The getElementById() method of the Document interface returns an Element object representing the element whose id property matches the specified string. \nIn this case: document.getElementById(””demo””)",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById"
+    },
+    {
+      "id": 14,
+      "text": "Name all JavaScript data types",
+      "hasOptions": false,
+      "answer": "1) Number \n2) BigInt \n3) String \n4) Boolean \n5) Symbol \n6) undefined \n7) null \n8) Object",
+      "explanation": "The latest ECMAScript standard defines eight data types: \nSeven data types that are primitives: Boolean, null, undefined, Number, BigInt, String, Symbol. \nThe eighth data type - Object is a compound type, which helps to store various keyed collections and more complex entities. \nAll types except Object define immutable values represented directly at the lowest level of the language. We refer to values of these types as primitive values. \nAll primitive types, except null, can be tested by the typeof operator. typeof null returns ”object”, so one has to use === null to test for null. \nJavaScript is a dynamic language with dynamic types: variables in JavaScript are not directly associated with any particular value type, \nand any variable can be assigned (and re-assigned) values of all types. \n1)Number - storing positive floating-point numbers between -Infinity and +Infinity. \n*NaN (”Not a Number”) is a special kind of number value that”s typically encountered when the result of an arithmetic operation cannot be expressed as a number. \nIt is also the only value in JavaScript that is not equal to itself. \n2) BigInt - helps safely store and operate on large integers even beyond the safe integer limit for Numbers. \n3) String - storing sequences of characters. \n4) Boolean - storing true or false. \n5) Symbol - storing unique identifiers. \n6) undefined - in case when a variable has been declared, but a value has yet not been assigned. \n7) null value represents the intentional absence of any object value. \nnull is not an identifier for a property of the global object, like undefined can be. Instead, null expresses a lack of identification, indicating that a variable points to no object. \nIn practice, the difference between ”null” &amp; ”undefined” is minor, since undefined should not be redefined or shadowed. \n8) Object - storing collections of data and more complex entities.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types"
+    },
+    {
+      "id": 15,
+      "text": "What is the purpose of the array splice method?",
+      "hasOptions": false,
+      "answer": "The splice() method allows to modify an array by adding, removing, or replacing elements.",
+      "explanation": "The splice() method takes max 3 parameters: the index at which to start making changes to the array, the number of elements to remove, element to add to the array. \nThe splice() method is a mutating method. It may change the content of this.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice"
+    },
+    {
+      "id": 16,
+      "text": "1) Assuming the fetch request is successful and takes 50ms to complete, what will be the likely order of the console.log ↓ outputs? \n\nconsole.log(”Start”); \n\nlet counter = 0;\nconst intervalId = setInterval(() => {\n    console.log(`Interval ${++counter}`); \n    if (counter === 3) clearInterval(intervalId); \n}, 0); \n\nfetch(”https://api.example.com/data”)\n     .then(response => response.json())\n     .then(data => console.log(”Fetch result:’’, data))\n     .catch(error => console.log(”Fetch error:’’, error)); \n\nPromise.resolve().then(() => console.log(”Promise resolved”)); \n\nsetTimeout(() => console.log(”Timeout 1”), 0); \n\nconsole.log(”End”); \n\n\n2)How would the output change if we increased the interval in setInterval to 100ms? \n\n\n3)If the fetch request fails immediately, how would it affect the order of the outputs?",
+      "hasOptions": false,
+      "answer": "1) The likely order will be: \nStart \nEnd \nPromise resolved \nInterval 1 \nTimeout 1 \nInterval 2 \nInterval 3 \nFetch result: [data]. \n\n2) The order will be: \nStart \nEnd \nPromise resolved \nTimeout 1 \nFetch result: [data] \nInterval 1 \nInterval 2 \nInterval 3. \n\n3)The order is likely to be: \nStart \nEnd \nPromise resolved \nInterval 1 \nTimeout 1 \nInterval 2 \nFetch error: [error] \nInterval 3.",
+      "explanation": "1) The likely order will be: \nStart \nEnd \nPromise resolved \nInterval 1 \nTimeout 1 \nInterval 2 \nInterval 3 \nFetch result: [data]. \nBoth setInterval and setTimeout schedule macrotasks. \nWhen using a delay of 0ms (or any same delay) for both setInterval and setTimeout, their execution order is not guaranteed \nand can vary between JavaScript engines and even between runs in the same environment. \n2) Timeout will run before intervals and Fetch request will likely complete before the intervals are logged. \nSo, the order will be: \nStart \nEnd \nPromise resolved \nTimeout 1 \nFetch result: [data] \nInterval 1 \nInterval 2 \nInterval 3. \n\n3)The timing of the fetch result depends on network conditions and server response time, which can vary between runs. \nTests of the code show that the fetch result is likely to be logged after Interval 2 (or even after Interval 3). \nSo, the result is likely to be: \nStart \nEnd \nPromise resolved \nInterval 1 \nTimeout 1 \nInterval 2 \nFetch error: [error] \nInterval 3.",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 17,
+      "text": "What is the difference between slice and splice?",
+      "hasOptions": false,
+      "answer": "1) Slice() method is immutable || splice() method is mutable. \n2)Slice() method used to pick the elements from array || splice() method is used to add or remove elements from array. \n3)Slice() method returns a copy of portion of an array || splice() method returns the removed items.",
+      "explanation": "1) Slice() method is immutable (does not modify the original array), while splice() method is mutable (modifies the original array). \n2)Slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end, \nwhile splice() method instances changes the contents of an array by removing or replacing existing elements and/or adding new elements. \n3)Slice() method returns a new array containing the extracted elements, while splice() method returns the removed items as an array.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice"
+    },
+    {
+      "id": 18,
+      "text": "What is the difference between ”let” and ”var” in JavaScript?",
+      "hasOptions": false,
+      "answer": "1)”let” is block-scoped, while ”var” is function-scoped or global-scoped. \n2)“var” variables can be declared below their use, while ”let” - should be declared before assignment. \n3)”var” tolerates redeclarations, while ”let” does not. \n4)”let” is a modern variable declaration, while ”var” is an older one.",
+      "explanation": "”var” is generally not used in modern scripts, but still lurks in the old ones. \nThe main difference is that variables, declared with var, are either function-scoped or global-scoped. \nThey are visible through blocks = give an access to variables that are defined inside loops or if statements, because those variables are global. \nIf var is in a code block that is inside a function, then var becomes a function-level variable, and outside this function variable`s value would be undefined. \n”let” is block-scoped, meaning that it is only available within the block it is defined in. \n”let” is a modern variable declaration that is preferred over ”var” in most cases. \n”let” does not tolerate redeclarations, while ”var” does. \n”let” variables must be declared before they are used, while ”var” variables can be declared below their use.",
+      "source": "GitHub Copilot",
+      "source2": "https://javascript.info/var"
+    },
+    {
+      "id": 19,
+      "text": "What is the correct JavaScript syntax for writing ”Hello World”?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "print(”Hello World”);", "isCorrect": false },
+        { "id": 2, "text": "document.write(”Hello World”)", "isCorrect": true },
+        { "id": 3, "text": "echo ”Hello World”;", "isCorrect": false },
+        { "id": 4, "text": "”Hello World”.write()", "isCorrect": false }
+      ],
+      "answer": "document.write(”Hello World”)",
+      "explanation": "The document.write() method writes a string of text to a document stream opened by document.open(). \nBecause document.write() writes to the document stream, calling document.write() on a closed (loaded) document automatically calls document.open(), which will clear the document. \n! Use of the document.write() method is strongly discouraged: this method has very idiosyncratic behavior. \nIn some cases this method is dependent on network latency, which can lead to failures that are very hard to debug. \nIn other cases, the call can clear the current page first, as if document.open() had been called. \nIn yet more cases, the method is simply ignored, or throws an exception.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/Document/write",
+      "source2": "ChatGPT"
+    },
+    {
+      "id": 20,
+      "text": "What are arrow functions?",
+      "hasOptions": false,
+      "answer": "Arrow functions are a shorthand syntax for writing function expressions in JavaScript. \nThey use the => syntax to separate the function parameters from the function body and have a concise syntax that makes them ideal for writing short, one-liner functions.",
+      "explanation": "An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage: \n1)Arrow functions don”t have their own bindings to this, arguments, or super, and should not be used as methods. \n2)They cannot be used as constructors. Calling them with new throws a TypeError. \nArrow functions are always unnamed. If the arrow function needs to call itself, it is better to use a named function expression instead.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+    },
+    {
+      "id": 21,
+      "text": "What will the following code return: typeof ”Hello”?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "word", "isCorrect": false },
+        { "id": 2, "text": "text", "isCorrect": false },
+        { "id": 3, "text": "string", "isCorrect": true },
+        { "id": 4, "text": "undefined", "isCorrect": false }
+      ],
+      "answer": "string",
+      "explanation": "The typeof operator returns a string indicating the type of the unevaluated operand. \nDepending on the context typeof operator could return: \n1)”undefined”. \n2)”boolean”. \n3)”symbol”. \n4)”number”. \n5)”bigint”. \n6)”string”. \n7)”function”. \n8)”object” (for type ”null” or any other object).",
+      "source": "ChatGPT",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof"
+    },
+    {
+      "id": 22,
+      "text": "What will be the order of the console.log ↓ outputs? \n\nconsole.log(”Start”); \n\nsetTimeout(() => console.log(”Timeout 1”), 0); \n\nnew Promise((resolve) => {\nconsole.log(”Promise executor”); \nresolve(); \n}).then(() => console.log(”Promise 1”)) \n.then(() => console.log(”Promise 2”)); \n\nnew Promise((resolve) => {\nsetTimeout(() => {\nconsole.log(”Timeout in Promise”); \nresolve(); \n}, 0); \n}).then(() => console.log(”Promise after Timeout”)); \n\nqueueMicrotask(() => console.log(”Microtask”)); \n\nsetTimeout(() => console.log(”Timeout 2”), 0); \n\nconsole.log(”End”);",
+      "hasOptions": false,
+      "answer": "Start \nPromise executor \nEnd \nPromise 1 \nMicrotask \nPromise 2 \nTimeout 1 \nTimeout in Promise \nPromise after Timeout \nTimeout 2",
+      "explanation": "First, synchronous code runs: ”Start” and ”End” are logged. \nThe Promise executor function runs synchronously when the Promise is created. \nThis is why ”Promise executor” is logged before ”End”, despite being inside a Promise. \nBoth queueMicrotask and Promise.resolve().then() schedule microtasks, but queueMicrotask is slightly more efficient as it doesn”t create a Promise object. \nAll the setTimeout calls (including the one inside the Promise) are scheduled as macrotasks. \nThe order of execution for the setTimeout callbacks depends on when they were scheduled, not on whether they were scheduled from within a Promise or not. \nThe setTimeout inside the Promise doesn”t get any special priority; it”s just another macrotask scheduled after the others.",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 23,
+      "text": "What is the first class function?",
+      "hasOptions": false,
+      "answer": "First-class function is a function, that acts like any other variable in that language.",
+      "explanation": "A programming language is said to have First-class functions when functions in that language are treated like any other variable. \nFor example, in such a language, a function can be: \n1)passed as an argument to other functions; \n2)returned by another function; \n3)assigned as a value to a variable.",
+      "source": "https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function"
+    },
+    {
+      "id": 24,
+      "text": "Which method is used to create a new array with all elements that pass a test implemented by the provided function?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "map()", "isCorrect": false },
+        { "id": 2, "text": "filter()", "isCorrect": true },
+        { "id": 3, "text": "reduce()", "isCorrect": false },
+        { "id": 4, "text": "forEach()", "isCorrect": false }
+      ],
+      "answer": "filter()",
+      "explanation": "The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function. \nIt does not change the original array.",
+      "source": "Claude 3.5 Sonnet",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+    },
+    {
+      "id": 25,
+      "text": "What is a higher order function?",
+      "hasOptions": false,
+      "answer": "A higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result.",
+      "explanation": "JavaScript is suitable for functional programming because it supports the concept of higher-order functions. \nFunctional programming is an approach to programming, where functions can be passed to other functions as parameters or can be used as values returned by other functions. \nIn JavaScript functions that work with other functions (accept them as arguments or return them as results) are called Higher-order functions. \nIn other words, Higher-order functions (HOFs) can do at least one of the following: \n1)Accept other functions as arguments; \n2) Return a function as a result. \nThis ability allows developers to write clean, reusable, and expressive code. \nThese are the most popular higher order functions in JavaScript: \n1. Array.prototype.map(); \n2. Array.prototype.filter(); \n3. Array.prototype.reduce(); \n4. Array.prototype.forEach(); \n5. Array.prototype.some(); \n6. Array.prototype.every()",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://www.freecodecamp.org/news/higher-order-functions-explained/"
+    },
+    {
+      "id": 26,
+      "text": "What does the yield keyword do in a generator function?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Terminates the function", "isCorrect": false },
+        { "id": 2, "text": "Throws an error or result", "isCorrect": false },
+        {
+          "id": 3,
+          "text": "Pauses the function execution and returns a value",
+          "isCorrect": true
+        },
+        { "id": 4, "text": "Ends the generator function", "isCorrect": false }
+      ],
+      "answer": "Pauses the function execution and returns a value",
+      "explanation": "The yield operator is used to pause and resume a generator function (created by calling: ”function*’’). \nA generator function is a special type of function that can be paused and resumed. \nWhen a generator function is called, it returns an iterator object but does not execute its body immediately. \nWhen the iterator’s next() method is called, the generator function’s body is executed until the first yield expression, which specifies the value to be returned by the iterator. \nWhen the iterator’s next() method is called again, the generator function resumes execution from the point where it was paused until the next yield expression or return statement is encountered. \nThe yield keyword is used to pause the function execution and return a value. \nIt can be used to produce a sequence of values, one at a time, from a function.",
+      "source": "Claude 3.5 Sonnet",
+      "source2": "GitHub Copilot"
+    },
+    {
+      "id": 27,
+      "text": "What is hoisting?",
+      "hasOptions": false,
+      "answer": "JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables, classes, or imports to the top of their scope, prior to execution of the code.",
+      "explanation": "Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their respective scopes during compilation or interpretation, before the code is actually executed. \nThis means that you can use a variable or function before it has been declared, but only if it is declared using the var or function keywords. \nHowever, only the declarations themselves are hoisted, not their values or assignments. \nHoisting is not a term normatively defined in the ECMAScript specification. \nThe spec does define a group of declarations as ”HoistableDeclaration”, but this only includes ”function”, ”function*’’, ”async function”, and ”async function* declarations”. \nHoisting is often considered a feature of var declarations as well, although in a different way. \nIn colloquial terms, any of the following behaviors may be regarded as hoisting: \n1.)Being able to use a variable”s value in its scope before the line it is declared. (”Value hoisting”); \n2.)Being able to reference a variable in its scope before the line it is declared, without throwing a ReferenceError, but the value is always undefined. (”Declaration hoisting”); \n3.)The declaration of the variable causes behavior changes in its scope before the line in which it is declared; \n4.)The side effects of a declaration are produced before evaluating the rest of the code that contains it.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Glossary/Hoisting"
+    },
+    {
+      "id": 28,
+      "text": "Which method is used to execute a function after a specified number of milliseconds?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "setTimeout()", "isCorrect": true },
+        { "id": 2, "text": "setInterval()", "isCorrect": false },
+        { "id": 3, "text": "setTime()", "isCorrect": false },
+        { "id": 4, "text": "delay()", "isCorrect": false }
+      ],
+      "answer": "setTimeout()",
+      "explanation": "The setTimeout() method is used to execute a function or evaluate an expression after a specified number of milliseconds. \nThe setTimeout() method returns an ID value that can be used to cancel the timeout using the clearTimeout() method. \nSyntax: setTimeout(function, milliseconds, param1, param2, ...) \nfunction - the function to be executed; \nmilliseconds - the number of milliseconds to wait before executing the code; \nparam1, param2, ... - additional parameters to pass to the function.",
+      "source": "ChatGPT",
+      "source2": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 29,
+      "text": "What is callback in JavaScript?",
+      "hasOptions": false,
+      "answer": "A callback is a function that is passed as an argument to another function and is intended to be called when the first function has completed its task.",
+      "explanation": "There are two ways in which the callback may be called: synchronous and asynchronous. \nSynchronous callbacks are called immediately after the invocation of the outer function, with no intervening asynchronous tasks, while asynchronous callbacks are called at some point later, after an asynchronous operation has completed. \nExamples of synchronous callbacks include the callbacks passed to Array.prototype.map(), Array.prototype.forEach(), etc. \nExamples of asynchronous callbacks include the callbacks passed to setTimeout() and Promise.prototype.then().",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Glossary/Callback_function"
+    },
+    {
+      "id": 30,
+      "text": "1)What will be the order of the console.log ↓ outputs? Assume the fetch request fails immediately. \n\nconsole.log(”Start”); \n\nsetTimeout(() => console.log(”Timeout 1”), 0); \n\nPromise.resolve() \n.then(() => {\nconsole.log(”Promise 1”); \nsetTimeout(() => console.log(”Timeout 2”), 0); \n}) \n.then(() => console.log(”Promise 2”)); \n\nfetch(”https://api.example.com”) \n.then(() => console.log(”Fetch”)) \n.catch(() => console.log(”Fetch failed”)); \n\nrequestAnimationFrame(() => console.log(”rAF”)); \n\nqueueMicrotask(() => {\nconsole.log(”Microtask 1”); \nqueueMicrotask(() => console.log(”Microtask 2”)); \n}); \n\nconsole.log(”End”); \n\n\n2)If the fetch request was successful but took 100ms to respond, how would this affect the order of logs? \n\n\n3)How does the behavior of nested queueMicrotask calls differ from nested Promise.then calls?",
+      "hasOptions": false,
+      "answer": "1)The order will be: \n”Start” \n”End” \n”Promise 1” \n”Microtask 1” \n”Promise 2” \n”Microtask 2” \n”Fetch failed” \n”Timeout 1” \n”Timeout 2” \n”rAF” \n\n2)”Fetch” would likely be logged after all other console.logs. \n\n3)Nested queueMicrotask calls are all executed before the next macrotask, \nwhereas nested Promise.then calls create new microtasks that are queued for the next microtask cycle.",
+      "explanation": "1)First, synchronous code runs: ”Start” and ”End” are logged. \nMicrotasks are processed in the order they were queued: \nPromise 1 logged, then nested Promise.then calls create new microtasks that are queued for the next microtask cycle \nqueueMicrotask() queues its callback \nThe fetch() promise is created but not yet resolved, it initiates a network request, which is inherently asynchronous. \nDuring microtask processing: \n”Promise 1”; ”Microtask 1” ”Promise 2”; and ”Microtask 2” are logged. \nOnly after all these microtasks are processed, the fetch() promise rejection is handled (assuming immediate failure), logging ”Fetch failed”. \nIn a real-world scenario, the timing of the fetch resolution (or rejection) would depend on network conditions and how the browser/JavaScript engine handles the network request, because fetch takes time to receive the response. \nrequestAnimationFrame is typically executed before painting and after all microtasks. \nIt's designed to sync with the browser's rendering cycle. \n\n2)If the fetch took 100ms, ”Fetch” would likely be logged after all other console.logs, as the fetch response would create a new macrotask after the current event loop cycle. \n\n3)Nested queueMicrotask calls are all executed before the next macrotask, \nwhereas nested Promise.then calls create new microtasks that are queued for the next microtask cycle.",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 31,
+      "text": "What is an Early return pattern?",
+      "hasOptions": false,
+      "answer": "The Early return pattern is a programming pattern (not specific only to Javascript), where a function or method returns as soon as a condition is met, rather than executing the rest of the function.",
+      "explanation": "The Early Return pattern is a coding technique where a function or method is stopped as soon as a specific condition is met and evaluates to true. \nInstead of proceeding with the rest of the function”s logic, the method immediately returns a value or performs an action based on the condition”s outcome. \nIn simple terms, everything that we wouldn”t want to happen in our function we would write at the top, and everything that we want to happen - we would write at the bottom.",
+      "source": "https://dev.to/arikaturika/one-concept-a-day-early-return-pattern-in-javascript-3pol"
+    },
+    {
+      "id": 32,
+      "text": "What is the output of ”console.log(typeof (() => {}))’’?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "function", "isCorrect": true },
+        { "id": 2, "text": "object", "isCorrect": false },
+        { "id": 3, "text": "undefined", "isCorrect": false },
+        { "id": 4, "text": "null", "isCorrect": false }
+      ],
+      "answer": "function",
+      "explanation": "The typeof operator returns a string indicating the type of the unevaluated operand. \nIn this case, typeof (() => {}) returns ”function”.",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 33,
+      "text": "What is a cookie in JavaScript?",
+      "hasOptions": false,
+      "answer": "A cookie is a small piece of data that is commonly used to remember user preferences and login information, and to track user activity on a website.",
+      "explanation": "A cookie is a small piece of data a server sends to a user”s web browser. \nThe browser may store cookies, create new cookies, modify existing ones, and send them back to the same server with later requests. \nCookies enable web applications to store limited amounts of data and remember state information; by default the HTTP protocol is stateless. \nTypically, the server will use the contents of HTTP cookies to determine whether different requests come from the same browser/user and then issue a personalized or generic response as appropriate. \nCookies are mainly used for three purposes: \n1)Session management: Logins, shopping carts, game scores, or anything else the server should remember. \n2)Personalization: User preferences such as display language and UI themes. \n3)Tracking: Recording and analyzing user behavior.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies"
+    },
+    {
+      "id": 34,
+      "text": "What does the Object.is() method do?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Checks if two values are equal with type coercion",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Checks if two values are equal without type coercion, considering NaN and signed zeros",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Checks if two values are strictly equal",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Checks if two objects have the same properties",
+          "isCorrect": false
+        }
+      ],
+      "answer": "Checks if two values are equal without type coercion, considering NaN and signed zeros",
+      "explanation": "The Object.is() static method determines whether two values are the same value. \nTwo values are the same if one of the following holds: \nboth ”undefined”; \nboth ”null”; \nboth ”true” or both ”false”; \nboth strings of the same length with the same characters in the same order; \nboth the same object (meaning both values reference the same object in memory); \nboth ”BigInts” with the same numeric value; \nboth ”symbols” that reference the same symbol value; \nboth numbers and both +0 or both -0 or both ”NaN” or both non-zero, not NaN, and have the same value. \nObject.is() is not equivalent to the ’’==’’ operator. The ’’==’’ operator applies various coercions to both sides (if they are not the same Type) before testing for equality. \nObject.is() does not coerce either value. \nObject.is() is also not equivalent to the ’’===’’ operator. \nThe only difference between Object.is() and ’’===’’ is in their treatment of signed zeros and NaN values. \nThe ’’===’’ operator (and the ’’==’’ operator) treats the number values ’’-0” and ’’+0” as equal, but treats NaN as not equal to each other. \nIn contrast: Object.is(+0, -0) would give false. \nObject.is(NaN, 0 / 0) would give true.",
+      "source": "Claude 3.5 Sonnet",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is"
+    },
+    {
+      "id": 35,
+      "text": "What is AJAX?",
+      "hasOptions": false,
+      "answer": "AJAX (Asynchronous JavaScript and XML) is a technique to update the relevant parts of the page without requiring a full page load",
+      "explanation": "Asynchronous JavaScript and XML (Ajax, or AJAX) is a web development technique in which a web app fetches content from the server by making asynchronous HTTP requests, and uses the new content to update the relevant parts of the page without requiring a full page load. \nThis can make the page more responsive, because only the parts that need to be updated are requested. \nAjax can be used to create single-page apps, in which the entire web app consists of a single document, which uses Ajax to update its content as needed. \nInitially Ajax was implemented using the XMLHttpRequest interface, but the fetch() API is more suitable for modern web applications: it is more powerful, more flexible, and integrates better with fundamental web app technologies such as service workers. \nModern web frameworks also provide abstractions for Ajax.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Glossary/AJAX"
+    },
+    {
+      "id": 36,
+      "text": "1)What will be the exact order of the console.log ↓ outputs? \n\nconsole.log(”Start”); \n\nsetTimeout(() => console.log(”Timeout 1”), 0); \n\nnew Promise((resolve) => {\nconsole.log(”Promise executor”); \nresolve(”Promise resolved”); \n}).then(result => {\nconsole.log(result); \nfor(let i = 0; i < 1000000000; i++) {\nconsole.log(”Long operation done”);\n} \n}); \n\nsetTimeout(() => console.log(”Timeout 2”), 0); \n\nqueueMicrotask(() => {\nconsole.log(”Microtask”); \n}); \n\nconsole.log(”End”); \n\n\n2)Explain why the Promise executor logs before ”End”, but the Promise resolution logs after. \n\n\n3)If we moved the long synchronous operation to be right after ”Start”, how would it affect the order of outputs?",
+      "hasOptions": false,
+      "answer": "1)The order will be: \n”Start” \n”Promise executor” \n”End” \n”Promise resolved” \n”Long operation done” \n”Microtask” \n”Timeout 1” \n”Timeout 2”. \n\n2)The Promise executor function runs synchronously when the Promise is created. \n\n3)It would delay everything else. The order would be:\n”Start” \n”Long operation done” \n”Promise executor” \n”End” \n”Promise resolved” \n”Microtask” \n”Timeout 1” \n”Timeout 2”",
+      "explanation": "1) - First synchronous code runs first (”Start”; ”Promise executor”; ”End”) \n - Then microtasks are processed in the order they were queued: \nPromise.resolve().then() and its long operation inside it; \nqueueMicrotask() queues its callback. \n - Finally, macrotasks - the setTimeout callbacks are processed. \n\n2)The Promise executor function runs synchronously when the Promise is created. \nThe ”then” callback is a microtask that runs after all synchronous code has finished. \n\n3)If moved to be right after ”Start”, it would delay everything else. The order would be:\n”Start” \n”Long operation done” \n”Promise executor” \n”End” \n”Promise resolved” \n”Microtask” \n”Timeout 1” \n”Timeout 2”",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 37,
+      "text": "What is the difference between synchronous and asynchronous code in JavaScript?",
+      "hasOptions": false,
+      "answer": "Synchronous code executes tasks in sequence and waits for each task to complete before moving on, \nwhile asynchronous code can execute multiple tasks simultaneously and doesn”t wait for them to complete before moving on to the next task.",
+      "explanation": "Asynchronous programming is a technique that enables the program to start a potentially long-running task and still be able to be responsive to other events while that task runs, rather than having to wait until that task has finished. \nMany functions provided by browsers, especially the most interesting ones, can potentially take a long time, and therefore, are asynchronous.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous"
+    },
+    {
+      "id": 38,
+      "text": "Which method is used to create a new array with all sub-array elements concatenated into it recursively up to a specified depth?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "concat()", "isCorrect": false },
+        { "id": 2, "text": "flat()", "isCorrect": true },
+        { "id": 3, "text": "spread()", "isCorrect": false },
+        { "id": 4, "text": "reduce()", "isCorrect": false }
+      ],
+      "answer": "flat()",
+      "explanation": "The flat() method is a copying method - it returns a shallow copy that contains the same elements as the ones from the original array. \nThe flat() method has an optional parameter depth which specify how deep a nested array structure should be flattened. Defaults to 1. \nFor example: ”const exampleArr = [1, 2, [3, 4, [5, 6]]]’’ \n”exampleArr.flat(2)’’ \nResult: [1, 2, 3, 4, 5, 6]",
+      "source": "Claude 3.5 Sonnet",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat"
+    },
+    {
+      "id": 39,
+      "text": "Who created Javascript?",
+      "hasOptions": false,
+      "answer": "JavaScript was created by Brendan Eich in 1995.",
+      "explanation": "JavaScript was created by Brendan Eich while he was working at Netscape Communications Corporation.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 40,
+      "text": "What are promises in JavaScript?",
+      "hasOptions": false,
+      "answer": "Promises in JavaScript are a way of handling async operations. \nThey help us write async code that looks and behaves like sync code, making it easier to read and maintain. \nPromises have three states: pending, fulfilled, and rejected.",
+      "explanation": "A Promise is an object representing the eventual completion or failure of an asynchronous operation. \nPromises help to execute two or more asynchronous operations back to back, where each subsequent operation starts when the previous operation succeeds, with the result from the previous step. \nA Promise is a proxy for a value not necessarily known when the promise is created. \nInstead of immediately returning the final value, the asynchronous method returns a ”promise” to supply the value at some point in the future. \nA Promise is in one of these states: \n1) pending: initial state, neither fulfilled nor rejected. \n2) fulfilled: meaning that the operation was completed successfully. \n3) rejected: meaning that the operation failed. \nThe eventual state of a pending promise can either be fulfilled with a value or rejected with a reason (error). \nWhen either of these options occur, the associated handlers queued up by a promise”s then method are called. \nThe promise methods then(), catch(), and finally() are used to associate further action with a promise that becomes settled.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "hhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+    },
+    {
+      "id": 41,
+      "text": "1)What will be the order of the console.log ↓ outputs? \n\nconsole.log(”1”); \n\nsetTimeout(() => console.log(”2”), 0); \n\nPromise.resolve().then(() => console.log(”3”)); \n\nPromise.resolve().then(() => setTimeout(() => console.log(”4”), 0)); \n\nPromise.resolve().then(() => console.log(”5”)); \n\nsetTimeout(() => console.log(”6”), 0); \n\nconsole.log(”7”);  \n\n\n2)How would the order change if we replaced the first setTimeout with setImmediate \n(assuming this code is running in an environment that supports setImmediate, like Node.js)? \n\n3) What would happen if we added process.nextTick(() => console.log(”8”)) just before the last console.log(”7”)? (Again, assuming a Node.js environment)",
+      "hasOptions": false,
+      "answer": "1)The order of console.log outputs will be: 1, 7, 3, 5, 2, 6, 4. \n2) The order would remain the same. \n3)The order will be: 1, 7, 8, 3, 5, 2, 6, 4.",
+      "explanation": "1) The order: 1, 7, 3, 5, 2, 6, 4 \nFirst, synchronous code runs: ”1” and ”7” are logged. \nThen, microtasks (Promises) are processed: ”3” and ”5” are logged. \nFinally, macrotasks (setTimeout callbacks) are processed: ”2” and ”6” are logged. \nThe Promise that sets up another setTimeout (”4”) is added to the macrotask queue and executed last. \n\n2)A setTimeout() callback with a 0ms delay is very similar to setImmediate(). \nThe execution order (setTimeout() | setImmediate()) will depend on various factors, but they will be both run in the next iteration of the event loop. \n\n3)When we pass a function to process.nextTick(), we instruct the engine to invoke this function at the end of the current operation, before the next event loop tick starts. \nIt's the way we can tell the JS engine to process a function asynchronously (after the current function), but as soon as possible, not queue it. \nIn this case, ”8” would be logged after ”7” but before ”3”, because process.nextTick callbacks are processed before other microtasks in Node.js.",
+      "source": "Claude 3.5 Sonnet",
+      "source2": "https://nodejs.org/en/learn/asynchronous-work/understanding-setimmediate#understanding-setimmediate"
+    },
+    {
+      "id": 42,
+      "text": "What is the output of ”console.log(typeof (null))?’’",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "null", "isCorrect": false },
+        { "id": 2, "text": "object", "isCorrect": true },
+        { "id": 3, "text": "undefined", "isCorrect": false },
+        { "id": 4, "text": "number", "isCorrect": false }
+      ],
+      "answer": "object",
+      "explanation": "The typeof operator returns a string indicating the type of the unevaluated operand. \nIn this case, typeof null returns ”object”.",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 43,
+      "text": "What is the output of ”console.log(1 + ”2” + 3 + 4)?’’",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "1234", "isCorrect": true },
+        { "id": 2, "text": "10", "isCorrect": false },
+        { "id": 3, "text": "8+”2”", "isCorrect": false },
+        { "id": 4, "text": "NaN", "isCorrect": false }
+      ],
+      "answer": "1234",
+      "explanation": "When adding a number to a string, JavaScript converts the number to a string and performs string concatenation.\nSo 1 + ”2” becomes ”1” + ”2”, which results in ”12”. \nAgain, when adding a number to a string, the number is converted to a string, so it will be string ”1234”. \nThis example demonstrates JavaScript”s type coercion and how the + operator behaves differently depending on the types of its operands. \nWhen used with strings, it performs concatenation rather than numerical addition.",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 44,
+      "text": "What is NaN in JavaScript?",
+      "hasOptions": false,
+      "answer": "NaN (Not A Number) is a global property in JavaScript that represents a situation where a value is not a valid number.",
+      "explanation": "One important thing to note is that NaN is not equal to any value, including itself. \nWe can use the isNaN() function to check whether a value is NaN or not.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 45,
+      "text": "What is the output of ”console.log(0.1 + 0.2 === 0.3)?’’",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "true", "isCorrect": false },
+        { "id": 2, "text": "false", "isCorrect": true },
+        { "id": 3, "text": "undefined", "isCorrect": false },
+        { "id": 4, "text": "null", "isCorrect": false }
+      ],
+      "answer": "false",
+      "explanation": "Computers, due to their way of storing and processing data, can sometimes behave differently from how humans are accustomed to numbers. \nComputers store and process numbers in a binary (two-value) format made up of 0s and 1s. \nThis is different from when we work with the decimal system. \nNumbers that look simple and neat in the decimal system can become an infinite series without an exact counterpart in the binary system. \nFor example, 0.1 is an infinite number in the binary system, and computers store this number with a certain precision. \nThis creates a rounding error, and so numbers like 0.1 cannot be accurately expressed in the binary system. \nJavaScript uses the IEEE 754 standard to represent numbers. \nThis standard stores all decimal numbers in binary format. \nDecimal numbers like 0.1 and 0.2 can’t be precisely represented in binary format and a rounding error occurs. \n”console.log(0.1 + 0.2)’’ will result ”0.30000000000000004”, which is not equal to 0.3. \nThis is why the expression ”0.1 + 0.2 === 0.3” evaluates to false.",
+      "source": "https://medium.com/@halilatilla/in-javascript-is-0-1-0-2-0-3-7a3edc541ecd"
+    },
+    {
+      "id": 46,
+      "text": "What is the DOM?",
+      "hasOptions": false,
+      "answer": "The DOM = Document Object Model is a programming interface that represents the structure and content of an HTML document as a tree-like structure of nodes.",
+      "explanation": "he Document Object Model is a programming interface for web documents. \nIt represents the page so that programs can change the document structure, style, and content. \nThe DOM represents the document as nodes and objects. \nEach node represents part of the document, such as elements, attributes, and text. \nThe DOM allows developers to access and manipulate the content and structure of a web page using programming languages like JavaScript. \nThe DOM is not a programming language, but without it, the JavaScript language wouldn”t have any model or notion of web pages, HTML documents, SVG documents, and their component parts. \nThe DOM is not part of the JavaScript language, but is instead a Web API used to build websites. \nThe DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction"
+    },
+    {
+      "id": 47,
+      "text": "What does the Set object in JavaScript allow?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Implementing a stack data structure",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Creating a sorted array of objects",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Storing only unique values of any type",
+          "isCorrect": true
+        },
+        { "id": 4, "text": "Mapping keys to values", "isCorrect": false }
+      ],
+      "answer": "Storing only unique values of any type",
+      "explanation": "The Set object lets to store unique values of any type, whether primitive values or object references. \nSet objects are collections of values. A value in the set may only occur once; it is unique in the set”s collection. \nIt is possible to iterate through the elements of a set in insertion order. \nThe insertion order corresponds to the order in which each element was inserted into the set by the add() method successfully (that is, there wasn”t an identical element already in the set when add() was called). \nInstance methods include: add(), delete(), has(), clear(), values(), keys(), entries(), forEach(), etc.",
+      "source": "Claude 3.5 Sonnet",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set"
+    },
+    {
+      "id": 48,
+      "text": "What is a DOM node in JavaScript?",
+      "hasOptions": false,
+      "answer": "A node in the DOM is a fundamental unit that represents an element, attribute, or text content in a web page.",
+      "explanation": "Because the vast majority of code that uses the DOM revolves around manipulating HTML documents, it”s common to refer to the nodes in the DOM as elements, although strictly speaking not every node is an element. \nEvery object located within a document is a node of some kind. \nIn an HTML document, an object can be an element node but also a text node or attribute node. \nEvery node has a relationship with other nodes, such as a parent, child, or sibling. \nThe parent node contains the child nodes, and the child nodes can have siblings that share the same parent",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 49,
+      "text": "What is event propagation?",
+      "hasOptions": false,
+      "answer": "Event propagation is a concept in JavaScript that describes how events travel to and fro the Document Object Model(Dom) tree. \nIt involves two phases: capturing and bubbling + event.target phase.",
+      "explanation": "Event propagation in the DOM refers to how events move or flow through different elements on a webpage. \nWhen an event happens on an element, like a click, it can travel up to its parent elements and eventually to the whole document. This is called event bubbling. \nAlternatively, events can also travel down from the document to the element that triggered the event, which is called capturing. \nCapturing is very rarely used in real code, but it can also be useful. \nSo, the whole event propagation process (when event happens) works in this order: \n1) Capturing phase: when event happens it travels through the chain of parents down to the element (capturing), \n2)Then it reaches the event.target element - element on which the event occurred. \n3)Bubbling phase: the event is first captured by the innermost element and bubbling up to the outermost element. \nEvent propagation can be stopped using the stopPropagation() method. \nUnderstanding event propagation could be useful for example, when in custom created table the specific if clicked should has one scenario, but the whole row should has another scenario. \nIn this case, event.stopPropagation() could be used for this column to stop the event from bubbling up to the parent element (row). \nHandlers added through the ”on&lt;event&gt;’’ property or through HTML attributes, or through addEventListener(event, handler) with two arguments, \nknow nothing about the capturing phase, but work only for the event.target and bubbling phase. \nTo catch an event at the capturing phase, you need to use the third capture argument like this: elem.addEventListener(..., {capture: true}) \nThis is a very rare need, but it exists. \nFor example, it could help in a custom context menu, inside other components. \nIf one component in menu is open, when you clicked on another component the old one should hide. \nIn this case, {capture: true} argument in capturing phase could be used to hide the old one component, when the new one will be opened.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://www.freecodecamp.org/news/a-simplified-explanation-of-event-propagation-in-javascript-f9de7961a06e/"
+    },
+    {
+      "id": 50,
+      "text": "What is the difference between event.preventDefault() and event.stopPropagation()?",
+      "hasOptions": false,
+      "answer": "event.preventDefault() stops the default behavior of an element, while event.stopPropagation() prevents propagation of the current event in the capturing or bubbling phases",
+      "explanation": "event.preventDefault() is a method that stops the default action of an event from behavior that it normally would act. \nFor example, using event.preventDefault() in a form will stop the form from submitting. \nOn the other hand, event.stopPropagation() is a method that stops the event from bubbling up or capturing down the DOM tree. \nBoth methods are used to control the behavior of events in JavaScript and are commonly used in event handling.",
+      "source": "GitHub Copilot",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"
+    },
+    {
+      "id": 51,
+      "text": "What does the ?? operator do in JavaScript?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Performs exponential calculation",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Checks if a value is null or undefined",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Returns the right-hand operand if the left-hand operand is null or undefined, otherwise returns the left-hand operand",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "Performs a bitwise XOR operation",
+          "isCorrect": false
+        }
+      ],
+      "answer": "Returns the right-hand operand if the left-hand operand is null or undefined, otherwise returns the left-hand operand",
+      "explanation": "The nullish coalescing operator (??) is a logical operator that returns its right-hand operand when its left-hand operand is null or undefined, and otherwise returns its left-hand operand. \nThis can be contrasted with the logical OR (||) operator, which returns the right-hand operand if the left-hand operand is any falsy value, not only null or undefined. \nThe nullish coalescing operator is useful for providing a default value for a potentially null or undefined value. \nSyntax: expr1 ?? expr2 \nexpr1 is returned if it is not null/undefined, otherwise expr2 is returned.",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 52,
+      "text": "What is call stack in JavaScript?",
+      "hasOptions": false,
+      "answer": "The call stack in JavaScript is a data structure that stores information about the currently executing functions. \nThis helps the JavaScript engine keep track of where it is in the execution of a script and manage the order in which functions are called.",
+      "explanation": "A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — \nwhat function is currently being run and what functions are called from within that function, etc. \nWe start with an empty Call Stack. Whenever we invoke a function, it is automatically added to the Call Stack. \nOnce the function has executed all of its code, it is automatically removed from the Call Stack. \nUltimately, the Stack is empty again. \nThe visualization is look something like this: <a href=”https://media.licdn.com/dms/image/D4D12AQHxWSIwAh-Trw/article-cover_image-shrink_720_1280/0/1685941521357?e=1724889600&v=beta&t=-Ig2K9CCenxChUBB6vC85HYFfH8IKMNGhCFHwLvlNmg” target=”_blank”>Callback schema picture</a>",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Glossary/Call_stack"
+    },
+    {
+      "id": 53,
+      "text": "What is an event loop?",
+      "hasOptions": false,
+      "answer": "Event loop is a runtime model of JavaScript, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. \nThe event loop concept: JavaScript engine waits for tasks, executes them and then sleeps, waiting for more tasks.",
+      "explanation": "Browser JavaScript execution flow, as well as in Node.js, is based on an event loop. \nThis runtime model is quite different from models in other languages like C and Java. \nThe general algorithm of the engine: while there are tasks: execute them, starting with the oldest task (“first come – first served” basis). \nThere are microtasks and macrotasks in the event loop. \nImmediately after every macrotask, the engine executes all tasks from microtask queue, prior to running any other macrotasks or rendering or anything else. \nMicrotasks are usually created by promises: an execution of .then/catch/finally handler becomes a microtask. \nThere’s also a special function queueMicrotask(func) that queues func for execution in the microtask queue. \nGreat video for better understanding how event loop and tasks queue work: <a href=”https://www.youtube.com/watch?v=eiC58R16hb8”>Video explanation</a>",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop"
+    },
+    {
+      "id": 54,
+      "text": "What will be the exact order of the console.log ↓ outputs? \n\nconsole.log(”1”); \n\nsetTimeout(() => console.log(”2”), 0); \n\nnew Promise((resolve) => {\n    console.log(”3”);\n    resolve();\n}).then(() => {\n    console.log(”4”);\n    Promise.resolve().then(() => {\n         setTimeout(() => console.log(”5”), 0);\n    });\n}); \n\nasync function asyncFunction() {\n    console.log(”6”);\n    await Promise.resolve();\n    console.log(”7”);\n} \n\nasyncFunction(); \n\nqueueMicrotask(() => console.log(”8”)); \n\nconsole.log(”9”);",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "1, 3, 9, 6, 7, 4, 8, 2, 5", "isCorrect": false },
+        { "id": 2, "text": "1, 3, 6, 4, 8, 2, 5, 6, 7", "isCorrect": false },
+        { "id": 3, "text": "1, 9, 3, 6, 8, 4, 7, 2, 5", "isCorrect": false },
+        { "id": 4, "text": "1, 3, 6, 9, 4, 7, 8, 2, 5", "isCorrect": true }
+      ],
+      "answer": "1, 3, 6, 9, 4, 7, 8, 2, 5",
+      "explanation": "Synchronous code runs first. ”3” is logged in the Promise executor, which runs synchronously when the Promise is created. \n”4” is in the ”then” callback, which is a microtask and runs after all synchronous code. \nMicrotasks are processed in the order they were queued. \nThe ”await” in asyncFunction creates a new microtask for the code after it. \nThis microtask is added to the queue after the currently executing microtask, which is why ”8” (queued earlier) comes before ”7”. \nFinally, macrotasks (setTimeout callbacks) are processed."
+    },
+    {
+      "id": 55,
+      "text": "What is the difference between microtask and macrotask queue?",
+      "hasOptions": false,
+      "answer": "The event loop always gives higher priority to the microtask queue, and will process all the callbacks in the microtask queue before moving on to the macrotask queue.",
+      "explanation": "A task is any JavaScript code which is scheduled to be run by the standard mechanisms such as initially starting to run a program, an event callback being run, or an interval or timeout being fired. These all get scheduled on the task queue. \nThe event loop driving your code handles these tasks one after another, in the order in which they were enqueued. \nThe oldest runnable task in the task queue will be executed during a single iteration of the event loop. \nAfter that, microtasks will be executed until the microtask queue is empty, and then the browser may choose to update rendering. \nThen the browser moves on to the next iteration of event loop. \nThe event loop will keep calling microtasks until there are none left in the queue, even if more keep getting added. \nAnd that is the difference in microtasks and macrotasks. \nThe microtask queue contains the callbacks of operations that are considered more urgent or important, such as promises and mutation observers APIs. \nThe macrotask queue contains the callbacks of operations that are less urgent such as timers, I/O events, and user interface events. \nImmediately after every macrotask, the engine executes all tasks from microtask queue, prior to running any other macrotasks or rendering or anything else. \nGreat video for better understanding how event loop and tasks queue work: <a href=”https://www.youtube.com/watch?v=eiC58R16hb8”>Video explanation</a>",
+      "source": "https://dev.to/jeetvora331/difference-between-microtask-and-macrotask-queue-in-the-event-loop-4i4i"
+    },
+    {
+      "id": 56,
+      "text": "How does setInterval() behave differently from setTimeout() in terms of when its callback is executed?",
+      "hasOptions": false,
+      "answer": "setInterval() schedules its callback to run repeatedly at the specified interval, while setTimeout() runs its callback only once.",
+      "explanation": "setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires, \nwhile setInterval() method repeatedly calls a function or executes a code snippet, with a fixed time delay between each call. \nsetTimeout() and setInterval() are both methods that execute a function after a specified amount of time. \nThe main difference between them is that setTimeout() executes the function only once after the specified time, while setInterval() executes the function repeatedly at the specified interval. \nFor example, setTimeout(() => console.log(”Hello”), 1000) will log ”Hello” to the console after 1 second, while setInterval(() => console.log(”Hello”), 1000) will log ”Hello” to the console every 1 second. \nIt”s important to note that setInterval() will continue to execute the function at the specified interval until it is cleared using clearInterval(). \nBoth setTimeout() and setInterval() return a unique identifier that can be used to clear the timer using clearTimeout() and clearInterval() respectively.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval"
+    },
+    {
+      "id": 57,
+      "text": "Which method is used to remove the last element from an array?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "shift()", "isCorrect": false },
+        { "id": 2, "text": "pop()", "isCorrect": true },
+        { "id": 3, "text": "remove()", "isCorrect": false },
+        { "id": 4, "text": "unpush", "isCorrect": false }
+      ],
+      "answer": "pop()",
+      "explanation": "The pop() method removes the last element from an array and returns that element. \nThis method changes the length of the array.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop"
+    },
+    {
+      "id": 58,
+      "text": "What will be the exact order of the console.log ↓ outputs? \n\nconsole.log(”A”); \n\nsetTimeout(() => console.log(”B”), 0); \n\nnew Promise((resolve) => {\n    console.log(”C”); \n    resolve(”D”); \n}).then(console.log); \n\nqueueMicrotask(() => {\n    console.log(”E”); \n    Promise.resolve(”F”).then(console.log); \n}); \n\nasync function asyncFunc() {\n    console.log(”G”); \n    await Promise.resolve(); \n    console.log(”H”); \n    setTimeout(() => console.log(”I”), 0); \n} \n\nasyncFunc(); \n\nPromise.resolve().then(() => console.log(”J”)); \n\nconsole.log(”K”);",
+      "hasOptions": false,
+      "answer": "The order of console.log outputs will be: A, C, G, K, D, E, H, J, F, B, I",
+      "explanation": "Synchronous code runs first: console.log outputs ”A”; \nPromise executor runs synchronously when the Promise is created and outputs ”C”; \nasyncFunc() starts executing and outputs ”G”; \nconsole.log outputs ”K” \n\nMicrotasks are processed next: \nconsole.log outputs ”D” (from the first resolved Promise) \nconsole.log outputs ”E” (from queueMicrotask). \nconsole.log outputs ”H” (from the continuation of asyncFunc). \nconsole.log outputs ”J” (from the standalone resolved Promise) \nconsole.log outputs ”F” (from the queueMicrotask nested Promise). \n\nMacrotasks from setTimeout() are processed last - ”B”; ”I”",
+      "source": "Claude 3.5 Sonnet"
+    },
+    {
+      "id": 59,
+      "text": "What will happen if using operator (for example ’’++’’) before value, like: ’’++x”?",
+      "hasOptions": false,
+      "answer": "The increment operator increments and returns the value after incrementing, so ”x” will be added 1 and only then assigned to a variable",
+      "explanation": "If used prefix, with operator before operand (for example, ’’++x”), the increment operator increments and returns the value after incrementing. \nPrefix increment: \nlet x = 3;\nconst y = ++x; \n// x is 4; y is 4 \n\nPostfix increment: \nlet x = 3; \nconst y = x++; \n// x is 4; y is 3",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment"
+    },
+    {
+      "id": 60,
+      "text": "How would you clone an object in JavaScript?",
+      "hasOptions": false,
+      "answer": "There are 4 ways to clone an object in JavaScript: \n1)Spread operator. \n2)Object.assign({}, ”data”) function. \n3)structuredClone(”data”) function. \n4)JSON.parse(JSON.stringify(”data”))",
+      "explanation": "1)Spread operator { ...data } \nSpread syntax can be used when all elements from an object or array need to be included in a new array or object, \nor should be applied one-by-one in a function call's arguments list. \n2)The Object.assign() static method copies all enumerable own properties from one or more source objects to a target object. \nIt returns the modified target object. \n3)The global structuredClone() method creates a deep clone of a given value using the structured clone algorithm. \nThis technique can be used for both arrays and objects, requires minimal code and is the recommended way of cloning objects in JavaScript, as it's the most performant and reliable. \n(works across the latest devices and browser versions since March 2022) \n4)JSON.parse(JSON.stringify(data)) \nSome solutions around the web use JSON.stringify() and JSON.parse(). \nWhile this approach might work in some cases, it can cause issues and performance problems. \n\nShallow cloning: using the spread operator (...) or Object.assign(), we can clone the object and create a new one from its properties. \nThis technique is known as shallow cloning, as it will work for the outer (shallow) object, but fail if we have nested (deep) objects which will ultimately be passed by reference. \n\nIn order to create a deep clone of an object, we need to recursively clone every nested object, cloning nested objects and arrays along the way. \nFor these purposes JavaScript introduced the structuredClone() global function, which can be used to deep clone objects.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://www.30secondsofcode.org/js/s/shallow-deep-clone-object/"
+    },
+    {
+      "id": 61,
+      "text": "Why it is better to use ”const” instead of ”let” when defining a variable?",
+      "hasOptions": false,
+      "answer": "Using ”const” instead of ”let” helps prevent accidental reassignment of variables \nand makes the code more predictable and easier to reason about.",
+      "explanation": "The ”const” declaration creates a read-only reference to a value. \nIt does not mean the value it holds is immutable, just that the variable identifier cannot be reassigned. \nWhen you use ”const”, you are telling other developers (and yourself) that this variable should not be reassigned. \nIt is better to use ”const”, because the value cannot be accidentally or intentionally reassigned. \nThis can help prevent bugs or malicious code from changing the value of the variable. \nPerformance: ”const” can also help the JavaScript engine optimize the code by knowing that the value will not change. \nBy default, it is more reasonable to use ”const” for all variables that do not need to be reassigned. \nIf you need to reassign a variable, you can use let.",
+      "source": "GitHub Copilot"
+    }
+  ],
+  "html": [
+    {
+      "id": 1,
+      "text": "What does HTML stand for?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Hyper Text Markup Language", "isCorrect": true },
+        {
+          "id": 2,
+          "text": "Hyperlinks and Text Markup Language",
+          "isCorrect": false
+        },
+        { "id": 3, "text": "Home Tool Markup Language", "isCorrect": false },
+        { "id": 4, "text": "Hyper Text Markup Leveler", "isCorrect": false }
+      ],
+      "answer": "Hyper Text Markup Language",
+      "explanation": "HTML stands for Hyper Text Markup Language. \nIt is the standard markup language for creating web pages and web applications. \nHTML describes the structure of a web page using a series of elements, which are represented by tags. \nEach element tells the browser how to display the content, such as headings, paragraphs, images, links, and more.",
+      "source": "GitHub Copilot"
+    },
+    {
+      "id": 2,
+      "text": "Which HTML element is used to define the largest heading?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<h6>", "isCorrect": false },
+        { "id": 2, "text": "<heading>", "isCorrect": false },
+        { "id": 3, "text": "<head>", "isCorrect": false },
+        { "id": 4, "text": "<h1>", "isCorrect": true }
+      ],
+      "answer": "<h1>",
+      "explanation": "The &lt;h1&gt; element is used to define the largest heading on a web page. \nHeadings are used to define the structure and hierarchy of a document, with &lt;h1&gt; being the highest level and &lt;h6&gt; being the lowest level. \nHeadings are important for search engine optimization (SEO) and accessibility, as they help users and search engines understand the content and structure of a page.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 3,
+      "text": "What is the correct HTML element for inserting a line break?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<break>", "isCorrect": false },
+        { "id": 2, "text": "<lb>", "isCorrect": false },
+        { "id": 3, "text": "<br>", "isCorrect": true },
+        { "id": 4, "text": "<line>", "isCorrect": false }
+      ],
+      "answer": "<br>",
+      "explanation": "The &lt;br&gt; element is used to insert a line break in HTML. \nIt is a self-closing tag, meaning it does not have a closing tag. \nWhen the browser encounters a &lt;br&gt; tag, it inserts a line break and moves the content that follows to the next line.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 4,
+      "text": "What is the correct HTML element for inserting an image?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<image>", "isCorrect": false },
+        { "id": 2, "text": "<img>", "isCorrect": true },
+        { "id": 3, "text": "<src>", "isCorrect": false },
+        { "id": 4, "text": "<picture>", "isCorrect": false }
+      ],
+      "answer": "<img>",
+      "explanation": "The &lt;img&gt; element is used to insert an image in HTML. \nIt is a self-closing tag that does not require a closing tag. \nThe &lt;img&gt; element has several attributes, such as src (source), alt (alternate text), width, and height, that define the image's properties and behavior.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 5,
+      "text": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "alt", "isCorrect": true },
+        { "id": 2, "text": "title", "isCorrect": false },
+        { "id": 3, "text": "longdesc", "isCorrect": false },
+        { "id": 4, "text": "href", "isCorrect": false }
+      ],
+      "answer": "alt",
+      "explanation": "The ”alt” attribute specifies an alternate text for an image if the image cannot be displayed. \nThe ”alt” attribute is important for accessibility, as it provides a text description of the image for users who are visually impaired or using screen readers. \nIt also helps with search engine optimization (SEO) by providing context for the image to search engines.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 6,
+      "text": "Which HTML element is used to define an unordered list?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<ol>", "isCorrect": false },
+        { "id": 2, "text": "<li>", "isCorrect": false },
+        { "id": 3, "text": "<ul>", "isCorrect": true },
+        { "id": 4, "text": "<list>", "isCorrect": false }
+      ],
+      "answer": "<ul>",
+      "explanation": "The &lt;ul&gt; element is used to define an unordered list in HTML. \nAn unordered list is a list of items that are not numbered or ordered in a specific sequence. \nEach item in an unordered list is defined by the &lt;li&gt; element, which is a child of the &lt;ul&gt; element.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 7,
+      "text": "What is the correct HTML element to define important text?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<important>", "isCorrect": false },
+        { "id": 2, "text": "<i>", "isCorrect": false },
+        { "id": 3, "text": "<b>", "isCorrect": false },
+        { "id": 4, "text": "<strong>", "isCorrect": true }
+      ],
+      "answer": "<strong>",
+      "explanation": "The &lt;strong&gt; element is used to define important text in HTML. \nThe content inside the &lt;strong&gt; element is typically displayed in bold by most browsers, although the element itself does not specify any particular visual style. \nThe &lt;strong&gt; element is used to indicate text that is of particular importance or emphasis.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 8,
+      "text": "Which HTML attribute is used to define inline styles?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "style", "isCorrect": true },
+        { "id": 2, "text": "font", "isCorrect": false },
+        { "id": 3, "text": "class", "isCorrect": false },
+        { "id": 4, "text": "styles", "isCorrect": false }
+      ],
+      "answer": "style",
+      "explanation": "The ”style” attribute is used to define inline styles in HTML. \nInline styles allow you to apply CSS styles directly to an HTML element using the ”style” attribute. \nThe value of the ”style” attribute is a set of CSS declarations separated by semicolons, with each declaration consisting of a property and a value.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 9,
+      "text": "How can you open a link in a new tab/browser window?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<a href=”url” new>", "isCorrect": false },
+        { "id": 2, "text": "<a href=”url” target=”new”>", "isCorrect": false },
+        {
+          "id": 3,
+          "text": "<a href=”url” target=”_blank”>",
+          "isCorrect": true
+        },
+        { "id": 4, "text": "<a href=”url” newtab>", "isCorrect": false }
+      ],
+      "answer": "<a href=”url” target=”_blank”>",
+      "explanation": "To open a link in a new tab or browser window, you can use the ”target” attribute with the value ”_blank” in the &lt;a&gt; element.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 10,
+      "text": "Which HTML element is used to define a table row?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<td>", "isCorrect": false },
+        { "id": 2, "text": "<tr>", "isCorrect": true },
+        { "id": 3, "text": "<th>", "isCorrect": false },
+        { "id": 4, "text": "<table>", "isCorrect": false }
+      ],
+      "answer": "<tr>",
+      "explanation": "The &lt;tr&gt; element is used to define a table row in HTML. \nA table row contains one or more table cells (&lt;td&gt; or &lt;th&gt;) that represent the individual cells within the row. \nThe &lt;tr&gt; element is a child of the &lt;table&gt; element and is used to group table cells into rows.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 11,
+      "text": "What are different types of list in HTML?",
+      "hasOptions": false,
+      "answer": "There are 3 types of list in HTML. \n1) Ordered List (<ol>). \n2) Unordered List (<ul>). \n3) Definition List (<dl>).",
+      "explanation": "\n1) Ordered List (&lt;ol&gt;) - list where items are marked with numbers. \n2) Unordered List (&lt;ul&gt;) - list where items (&lt;li&gt;) are marked with bullets. \nTypically, unordered-list items are displayed with a bullet, which can be of several forms, like a dot, a circle, or a square. \nThe &lt;ol&gt; and &lt;ul&gt; elements differ in that, with the &lt;ol&gt; element, the order is meaningful.  \n3) Definition List (&lt;dl&gt;) - list of terms (&lt;dt&gt;) and their descriptions (&lt;dd&gt;). \nEach screen reader exposes &lt;dl&gt; content differently, including total count, terms/definitions context, and navigation methods. \nThese differences are not necessarily bugs. \nAs of iOS 14, VoiceOver will announce that &lt;dl&gt; content is a list when navigating with the virtual cursor (not via the read-all command). \nVoiceOver does not support list navigation commands with &lt;dl&lt;.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 12,
+      "text": "Which HTML element is used to specify a footer for a document or section?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<footer>", "isCorrect": true },
+        { "id": 2, "text": "<foot>", "isCorrect": false },
+        { "id": 3, "text": "<bottom>", "isCorrect": false },
+        { "id": 4, "text": "<end>", "isCorrect": false }
+      ],
+      "answer": "<footer>",
+      "explanation": "The &lt;footer&gt; element is used to specify a footer for a document or section in HTML. \nThe &lt;footer&gt; element typically contains information about the author, copyright information, contact details, or links to related documents. \nThe &lt;footer&gt; element is often used in conjunction with the &lt;header&gt; and &lt;nav&gt; elements to define the structure of a web page.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 13,
+      "text": "What is the correct HTML element to define emphasized text?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<i>", "isCorrect": false },
+        { "id": 2, "text": "<em>", "isCorrect": true },
+        { "id": 3, "text": "<italic>", "isCorrect": false },
+        { "id": 4, "text": "<strong>", "isCorrect": false }
+      ],
+      "answer": "<em>",
+      "explanation": "The &lt;em&gt; HTML element marks text that has stress emphasis. \nThis element is for words that have a stressed emphasis compared to surrounding text. \nBy default, the visual result of &lt;em&gt; and &lt;i&gt; is the same: &lt;em&gt; element is displaying in italic type. However, the semantic meaning is different. \nThe &lt;em&gt; element represents stress emphasis of its contents, while the &lt;i&gt; element represents text that is set off from the normal prose, \nsuch as a foreign word, fictional character thoughts, or when the text refers to the definition of a word instead of representing its semantic meaning.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em"
+    },
+    {
+      "id": 14,
+      "text": "What is the difference between div element and span element?",
+      "hasOptions": false,
+      "answer": "The <div> element is a block-level element that is used to group elements and create sections in a document. \nThe <span> element is an inline element that is used to group inline elements and apply styles to them.",
+      "explanation": "The div element is a block-level element that is used to group and organize other HTML elements, \nwhile span element is an inline-element that is used to apply style or attribute to a specific part of a block-level element.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 15,
+      "text": "Which attribute is used to specify that an input field must be filled out before submitting the form?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "validate", "isCorrect": false },
+        { "id": 2, "text": "placeholder", "isCorrect": false },
+        { "id": 3, "text": "mandatory", "isCorrect": false },
+        { "id": 4, "text": "required", "isCorrect": true }
+      ],
+      "answer": "required",
+      "explanation": "When the ”required” attribute is added to an input element, the browser will prevent form submission if the field is left empty. \nThe ”required” attribute is commonly used with text fields, email fields, and other form elements to ensure that users provide the necessary information.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 16,
+      "text": "What are the different types of input field in HTML?",
+      "hasOptions": false,
+      "answer": "There are several types of input fields in HTML. \n1) Text. 2) Password. 3) Radio. 4) Checkbox. 5) Color 6) URL. 7) Button. \n8) File. 9) Image. 10) Hidden 11) Email. 12) Tel. 13) Search. 14) Reset. 15) Submit. \n16) Range 17) Number. 18) Time. 19) Month. 20) Week 21) Date. 22) Datetime-local",
+      "explanation": "There are several types of input fields in HTML. \n1) Text. 2) Password. 3) Radio. 4) Checkbox. 5) Color (color picker when active in supporting browsers). \n6) URL. 7) Button. 8) File. 9) Image. 10) Hidden (control that is not displayed, but whose value is submitted to the server.) \n11) Email. 12) Tel. 13) Search. 14) Reset. 15) Submit. \n16) Range (control for entering a number whose exact value is not important. Displays as a range widget defaulting to the middle value) \n17) Number. 18) Time. 19) Month. 20) Week 21) Date. 22) Datetime-local \n For Date &amp; Datetime-local - opens a date picker or numeric wheels for year, month, day when active in supporting browsers",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input"
+    },
+    {
+      "id": 17,
+      "text": "How to create a hyperlink in HTML?",
+      "hasOptions": false,
+      "answer": "By using <a> element with the href attribute to specify the URL of the page you want to link to. \nExample: <a href=”https://www.example.com”>Click here</a>",
+      "explanation": "Hyperlinks allow to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. \nA basic link is created by wrapping the text or other content inside an &lt;a&gt; element and using the href attribute, \nalso known as a Hypertext Reference, or target, that contains the web address. \nExample: <&lt; href=”https://www.example.com”&gt;Click here&lt;/a&gt;",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 18,
+      "text": "What is the correct HTML for making a text area? (When this element could be useful?)",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<input type=”textarea”>", "isCorrect": false },
+        { "id": 2, "text": "<textarea>", "isCorrect": true },
+        { "id": 3, "text": "<text>", "isCorrect": false },
+        { "id": 4, "text": "<text-area>", "isCorrect": false }
+      ],
+      "answer": "<textarea>",
+      "explanation": "The &lt;textarea&gt; HTML element represents a multi-line plain-text editing control, useful for allowing users to enter a sizeable amount of free-form text, \nfor example a comment on a review or feedback form. \nThe &lt;textarea&gt; element also accepts several attributes common to form &lt;input&gt;s, such as: \nautocapitalize, autocomplete, autofocus, disabled, placeholder, readonly, and required.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea"
+    },
+    {
+      "id": 19,
+      "text": "How to make a numbered list?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<list type=”number”>>", "isCorrect": false },
+        { "id": 2, "text": "<ul>", "isCorrect": false },
+        { "id": 3, "text": "<dl>", "isCorrect": false },
+        { "id": 4, "text": "<ol>", "isCorrect": true }
+      ],
+      "answer": "<ol>",
+      "explanation": "To create a numbered list in HTML, use the &lt;ol&gt; element. \nInside the &lt;ol&gt; element, use the &lt;li&gt; element to define each list item.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 20,
+      "text": "What are void elements in HTML?",
+      "hasOptions": false,
+      "answer": "Void elements are those elements in HTML which do not have closing tag or do not need to be closed. \nFor example: <br />, <link>, <img />, etc.",
+      "explanation": "A void element is an element in HTML that cannot have any child nodes (i.e., nested elements or text nodes). \nVoid elements only have a start tag; end tags must not be specified for void elements. \nThe void elements in HTML are as follows: &lt;area&gt;, &lt;base&gt;, &lt;br&gt;, &lt;col&gt;, &lt;embed&gt;, &lt;hr&gt;, &lt;img&gt;, &lt;input&gt;, &lt;link&gt;, &lt;meta&gt;, &lt;param&gt;, &lt;source&gt;, &lt;track&gt;, &lt;wbr&gt;. \nVoid elements are also known as self-closing elements or empty elements.",
+      "source": "https://developer.mozilla.org/en-US/docs/Glossary/Void_element"
+    },
+    {
+      "id": 21,
+      "text": "What is the correct HTML for making a drop-down list?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<dropdown>", "isCorrect": false },
+        { "id": 2, "text": "<dl>", "isCorrect": false },
+        { "id": 3, "text": "<list>", "isCorrect": false },
+        { "id": 4, "text": "<select>", "isCorrect": true }
+      ],
+      "answer": "<select>",
+      "explanation": "The &lt;select&gt; element is used to create a drop-down list in HTML. \nInside the &lt;select&gt; element, the &lt;option&gt; element is used to define each option in the list.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 22,
+      "text": "What is the purpose of the alt attribute in HTML?",
+      "hasOptions": false,
+      "answer": "The alt attribute in <img> element is used to provide a text description of an image for users who are unable in to see the image, such as those who use screen readers.",
+      "explanation": "The alt attribute holds a textual replacement for the image, which is mandatory and incredibly useful for accessibility — \nscreen readers read the attribute value out to their users so they know what the image means. \nAlt text is also displayed on the page if the image can”t be loaded for some reason: for example, network errors or content blocking",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 23,
+      "text": "Which HTML element is used to specify a table header?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<th>", "isCorrect": true },
+        { "id": 2, "text": "<td>", "isCorrect": false },
+        { "id": 3, "text": "<tr>", "isCorrect": false },
+        { "id": 4, "text": "<thead>", "isCorrect": false }
+      ],
+      "answer": "<th>",
+      "explanation": "The &lt;th&gt; element is used to specify a table header in HTML. \nThe &lt;th&gt; element is typically used to define the headings of columns or rows in a table. \nBy default, the content of a &lt;th&gt; element is displayed in bold and centered.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 24,
+      "text": "What is the difference between <link> tag and <a> tag?",
+      "hasOptions": false,
+      "answer": "The anchor tag <a> is used to create a hyperlink to another web page or to a certain part of a web page and these links are clickable, \nwhereas, link tag <link> defines a link between a document and external resource and these are not clickable.",
+      "explanation": "The &lt;link&gt; HTML element specifies relationships between the current document and an external resource. \nThis element is most commonly used to link to stylesheets (&lt;link href=”main.css”&gt;), but is also used to establish site icons \nA &lt;link&gt; element can occur either in the &lt;head&gt; or &lt;body&gt; element, depending on whether it has a link type that is body-ok. \nFor example, the stylesheet link type is body-ok, and therefore &lt;link rel=”stylesheet”&gt; is permitted in the body. \nHowever, this isn”t a good practice to follow; it makes more sense to separate &lt;link&gt; elements from body content, putting them in the &lt;head&gt;. \nThe anchor tag &lt;a&gt; creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 25,
+      "text": "Which HTML attribute specifies the URL of the page the link goes to?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "src", "isCorrect": false },
+        { "id": 2, "text": "href", "isCorrect": true },
+        { "id": 3, "text": "link", "isCorrect": false },
+        { "id": 4, "text": "url", "isCorrect": false }
+      ],
+      "answer": "href",
+      "explanation": "The ”href” attribute specifies the URL of the page the link goes to. \nThe ”href” attribute is used in the &lt;a&gt; element to define the destination address of the hyperlink. \nWhen a user clicks on the link, the browser navigates to the URL specified in the ”href” attribute.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 26,
+      "text": "What is the canvas element in HTML?",
+      "hasOptions": false,
+      "answer": "The <canvas> element is used to draw graphics, animations, data visualization, photo manipulation, real-time video processing by using scripting language like JavaScript.",
+      "explanation": "The &lt;canvas&gt; element provides a resolution-dependent bitmap canvas, which can be used for rendering graphs, charts, game graphics, or other data visualization. \nThe Canvas API largely focuses on 2D graphics. \nThe WebGL API, which also uses the &lt;canvas&gt; element, draws hardware-accelerated 2D and 3D graphics. \nThe &lt;canvas&gt; element on its own is just a bitmap and does not provide information about any drawn objects. \nCanvas content is not exposed to accessibility tools as semantic HTML is.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 27,
+      "text": "What does the <a> HTML element do?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Anchors an image", "isCorrect": false },
+        { "id": 2, "text": "Adds a form element", "isCorrect": false },
+        { "id": 3, "text": "Defines a hyperlink", "isCorrect": true },
+        { "id": 4, "text": "Defines an image", "isCorrect": false }
+      ],
+      "answer": "Defines a hyperlink",
+      "explanation": "The &lt;a&gt; HTML element is used to define a hyperlink, which is a clickable text or image that links to another web page or resource. \nThe ”href” attribute in the &lt;a&gt; element specifies the URL of the page the link goes to. \nWhen a user clicks on the link, the browser navigates to the specified URL.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 28,
+      "text": "Which HTML element is used to specify a block of text that has been quoted from another source?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<blockquote>", "isCorrect": true },
+        { "id": 2, "text": "<quote>", "isCorrect": false },
+        { "id": 3, "text": "<q>", "isCorrect": false },
+        { "id": 4, "text": "<cite>", "isCorrect": false }
+      ],
+      "answer": "<blockquote>",
+      "explanation": "The &lt;blockquote&gt; HTML element indicates that the enclosed text is an extended quotation. \nUsually, this is rendered visually by indentation. \nA URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the &lt;cite&gt; element.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+    },
+    {
+      "id": 29,
+      "text": "What is the difference between HTML form”s ”action” and ”method” attributes?",
+      "hasOptions": false,
+      "answer": "The ”action” attribute specifies the URL to which the form data is submitted, \nwhile the ”method” attribute specifies the HTTP method when submitting the form data(either ”GET” or ”POST”).",
+      "explanation": "The ”action” attribute specifies the URL to which the form data is submitted. \nWhen the form is submitted, the browser sends the form data to the URL specified in the ”action” attribute. \nThe ”method” attribute specifies the HTTP method used when submitting the form data. \nThe two most common methods are ”GET” and ”POST”. \n”GET” is used to request data from a specified resource, while ”POST” is used to submit data to be processed to a specified resource.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 30,
+      "text": "What are the advantages of HTML5 over its previous versions?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Mobile-friendly & Cross-platform",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Improved support for multimedia",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Multiple storage options (SQL database, application cache, web storage)",
+          "isCorrect": true
+        },
+        { "id": 4, "text": "All of the above", "isCorrect": true }
+      ],
+      "answer": "Multiple storage options (SQL database, application cache, web storage)",
+      "explanation": "1) Mobile-friendly. \n2)Cross-platform (there is no need of writing different code for different browsers and hence it saved a lot of time and cost). \n3) Improved support for multimedia. \nHTML5 introduced &lt;audio&gt; &lt;video&gt; and &lt;canvas&gt; tags which made it possible to use multimedia within the websites and make website more dynamic. \nBefore HTML5 we were unable to play multimedia on website without the help of flash players. \n4)Multiple storage options \nHTML5 offers multiple storage options, such as an SQL database, application cache, and web storage. \nTemporary client-side data storage with the help of SQL - made it possible for the users to browse already loaded content even when they are offline \n5)HTML5 has short and crisp syntax and comes with smart and improved security features hence it became very easy to write and manage HTML5 code.",
+      "source": "https://www.codementor.io/@pj0613/advantages-and-disadvantages-of-html5-1rbr08003f",
+      "source2": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 31,
+      "text": "What is the purpose of the <head> element in HTML?",
+      "hasOptions": false,
+      "answer": "The <head> tag in HTML is used to provide metadata about document, such as title of page, links and other information that is not directly displayed on the web page. \nThis information is used by browser and search engine to understand the content and structure of the web page.",
+      "explanation": "The &lt;head&gt; HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets. \nCommon elements include the &lt;title&gt; element, which specifies the title of the page, and the &lt;meta&gt; element, which provides metadata about the document, such as character encoding and viewport settings. \n**&lt;head&gt; primarily holds information for machine processing, not human-readability. \nFor human-visible information, like top-level headings and listed authors, there is a &lt;header&gt; element. **",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+    },
+    {
+      "id": 32,
+      "text": "Which HTML element is used to define a client-side script?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<script>", "isCorrect": true },
+        { "id": 2, "text": "<js>", "isCorrect": false },
+        { "id": 3, "text": "<js-script>", "isCorrect": false },
+        { "id": 4, "text": "<client>", "isCorrect": false }
+      ],
+      "answer": "<script>",
+      "explanation": "The &lt;script&gt; element is used to define client-side JavaScript code in HTML. \nJavaScript code written inside the &lt;script&gt; element is executed by the browser when the page is loaded or when certain events occur. \nThe &lt;script&gt; element can be placed in the &lt;head&gt; or &lt;body&gt; section of an HTML document.",
+      "source": "ChatGPT",
+      "source2": "GitHub Copilot"
+    },
+    {
+      "id": 33,
+      "text": "What would happen if there is no text between the HTML tags?",
+      "hasOptions": false,
+      "answer": "If there is no text between the HTML tags, the browser will not display anything on the web page.",
+      "explanation": "There would be nothing to format if there is not text present between the tags. \nTherefore, nothing will appear on the screen. Tags without closing tag like &lt;img&gt; do not require any text between them.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 34,
+      "text": "What is the purpose of the <meta> tag in HTML?",
+      "hasOptions": false,
+      "answer": "The <meta> tag is used to provide additional information about the webpage, such as author, keywords, description \nwhich is used by search engines to understand the content of the page.",
+      "explanation": "The &lt;meta&gt; HTML element represents metadata that cannot be represented by other HTML meta-related elements, like &lt;base&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt; or &lt;title&gt;. \nA &lt;meta&gt; element has attributes that define the metadata: name, content, http-equiv, charset. \nThe name attribute specifies the property name, and the content attribute specifies the property value. \nhttp-equiv=”refresh” can be used to refresh the page after a specified number of seconds: \nThe number of seconds until the page should be refreshed - specified in attribute ”content”. If ”content” has a non-negative integer - page will refresh. \nIf number followed by the string ’’;url=’’, and a valid URL - page will redirect to this URL after specified number of seconds.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta"
+    },
+    {
+      "id": 35,
+      "text": "Which HTML attribute is used to define the character encoding for the document?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "charset", "isCorrect": true },
+        { "id": 2, "text": "encoding", "isCorrect": false },
+        { "id": 3, "text": "meta", "isCorrect": false },
+        { "id": 4, "text": "charcode", "isCorrect": false }
+      ],
+      "answer": "charset",
+      "explanation": "The ”charset” attribute declares the document”s character encoding. \nIf the attribute is present, its value must be an ASCII case-insensitive match for the string ”utf-8”, because UTF-8 is the only valid encoding for HTML5 documents.",
+      "source": "ChatGPT",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta"
+    },
+    {
+      "id": 36,
+      "text": "Which HTML element defines navigation links?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<navigate>", "isCorrect": false },
+        { "id": 2, "text": "<navigation>", "isCorrect": false },
+        { "id": 3, "text": "<nav>", "isCorrect": true },
+        { "id": 4, "text": "<link>", "isCorrect": false }
+      ],
+      "answer": "<nav>",
+      "explanation": "The &lt;nav&gt; HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. \nCommon examples of navigation sections are menus, tables of contents, and indexes.",
+      "source": "ChatGPT",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav"
+    },
+    {
+      "id": 37,
+      "text": "What will happen if <!Doctype HTML> tag is absent?",
+      "hasOptions": false,
+      "answer": "Without <!Doctype HTML> tag, the browser will not be able to identify that it is an HTML document and HTML5 tags will not function properly.",
+      "explanation": "In HTML, the doctype is the required `&lt;!DOCTYPE html&gt;` preamble found at the top of all documents. \nIts sole purpose is to prevent a browser from switching into so-called ”quirks mode” when rendering a document; \nthat is, the ’’&lt;!DOCTYPE html&gt;’’ doctype ensures that the browser makes a best-effort attempt at following the relevant specifications, \nrather than using a different rendering mode that is incompatible with some specifications.",
+      "source": "https://developer.mozilla.org/en-US/docs/Glossary/Doctype",
+      "source2": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 38,
+      "text": "What is the correct HTML for making a text input field?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<input type=”text”>", "isCorrect": true },
+        { "id": 2, "text": "<textfield>", "isCorrect": false },
+        { "id": 3, "text": "<text>", "isCorrect": false },
+        { "id": 4, "text": "<input type=”textfield”>", "isCorrect": false }
+      ],
+      "answer": "<input type=”text”>",
+      "explanation": "The &lt;input&gt; element is used to create an input field in HTML. \nThe ”type” attribute specifies the type of input field, such as text, password, email, etc. \nTo create a text input field, use &lt;input type=”text”&gt;.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 39,
+      "text": "What is the use of ”target” attribute in HTML?",
+      "hasOptions": false,
+      "answer": "The ”target” attribute is used to specify where to open the linked document when the user clicks on the hyperlink.",
+      "explanation": "The target attribute should be used when there are multiple possible targets for the ending resource, \nsuch as when the parent document is embedded within an HTML or XHTML document, or is viewed with a tabbed browser. \nThis attribute specifies the name of the browsing context (e.g., a browser tab or an (X)HTML iframe or object element) \ninto which a document is to be opened when the link is activated. \nFor example, &lt;a href=.....target=”_blank”&gt; will open link in a new tab or window.",
+      "source": "ChatGPT",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/target"
+    },
+    {
+      "id": 40,
+      "text": "Which HTML element is used to define a table row?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<td>", "isCorrect": false },
+        { "id": 2, "text": "<tr>", "isCorrect": true },
+        { "id": 3, "text": "<th>", "isCorrect": false },
+        { "id": 4, "text": "<table>", "isCorrect": false }
+      ],
+      "answer": "<tr>",
+      "explanation": "The &lt;tr&gt; element is used to define a table row in HTML. \nA table row contains one or more table cells (&lt;td&gt; or &lt;th&gt;) that represent the individual cells within the row. \nThe &lt;tr&gt; element is a child of the &lt;table&gt; element and is used to group table cells into rows.",
+      "source": "ChatGPT"
+    },
+    {
+      "id": 41,
+      "text": "What is the difference between <section> and <article> in HTML?",
+      "hasOptions": false,
+      "answer": "The <section> element represents a standalone section of a document and is used when there is no other more specific element to use. \n The <article> element represents a self-contained piece of content that could be distributed and reused independently (product card or forum post).",
+      "explanation": "The &lt;section&gt; HTML element represents a generic standalone section of a document, which doesn”t have a more specific semantic element to represent it. \nSections should always have a heading, with very few exceptions. \n&lt;section&gt; element should only be used if there isn”t a more specific element to represent it. \nIf the contents of the element represent a standalone, atomic unit of content that makes sense syndicated as a standalone piece \n(e.g. a blog post or blog comment, or a newspaper article), the &lt;article&gt; element would be a better choice. \nA navigation menu should be wrapped in a &lt;nav&gt; element.",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section"
+    },
+    {
+      "id": 42,
+      "text": "What does the <iframe> HTML element do?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Embeds an image", "isCorrect": false },
+        {
+          "id": 2,
+          "text": "Embeds another HTML page within the current page",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Defines a map with geolocation",
+          "isCorrect": false
+        },
+        { "id": 4, "text": "Creates a form", "isCorrect": false }
+      ],
+      "answer": "Embeds another HTML page within the current page",
+      "explanation": "The &lt;iframe&gt; HTML element represents a nested browsing context, embedding another HTML page into the current one. \nEach embedded browsing context has its own document and allows URL navigations. \nThe navigations of each embedded browsing context are linearized into the session history of the topmost browsing context. \n**Because each browsing context is a complete document environment, every &lt;iframe&gt; in a page requires increased memory and other computing resources.**",
+      "source": "ChatGPT",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe"
+    },
+    {
+      "id": 43,
+      "text": "What is the purpose of <figcaption> tag?",
+      "hasOptions": false,
+      "answer": "The <figcaption> is used to define the caption or description of a media that is contained within a <figure> tag.",
+      "explanation": "The &lt;figcaption&gt; HTML element represents a caption or legend for a &lt;figure&gt; element",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 44,
+      "text": "Which HTML element is used to define an acronym?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<abbr>", "isCorrect": true },
+        { "id": 2, "text": "<acronym>", "isCorrect": false },
+        { "id": 3, "text": "<acr>", "isCorrect": false },
+        { "id": 4, "text": "<abbrv>", "isCorrect": false }
+      ],
+      "answer": "<abbr>",
+      "explanation": "The &lt;abbr&gt; HTML element represents an abbreviation or acronym. \nThe optional title attribute can provide an expansion for the abbreviation or acronym when a full expansion is not present. \nThe title attribute must contain a full human-readable description or expansion of the abbreviation. \nThis text is often presented by browsers as a tooltip when the mouse cursor is hovered over the element.",
+      "source": "ChatGPT",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr"
+    },
+    {
+      "id": 45,
+      "text": "What is <datalist> tag?",
+      "hasOptions": false,
+      "answer": "The <datalist> tag is new addition to HTML5, and it is used to provide a list of pre-defined options for an input field. \nIt allows to create dropdown list of options.",
+      "explanation": "The &lt;datalist&gt; HTML element contains a set of &lt;option&gt; elements that represent the permissible or recommended options available to choose from within other controls. \nTo bind the &lt;datalist&gt; element to the control, a unique identifier - #id attribute should be given to datalist, then the &lt;input&gt; element should be added with the list attribute with the same identifier as value. \nFor example: &lt;input type=”time” list=”popularHours”/&gt; &lt;datalist id=”popularHours”&gt; .........&lt;/datalist&gt;. \nOnly certain types of &lt;input&gt; support this behavior, and it can also vary from browser to browser \nFor example, the date, time, range and color types are not supported in Firefox - it supports only textual types. \nThe font size of the data list”s options does not zoom, always remaining the same size.",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist"
+    },
+    {
+      "id": 46,
+      "text": "Which HTML element is used to define preformatted text?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<pre>", "isCorrect": true },
+        { "id": 2, "text": "<code>", "isCorrect": false },
+        { "id": 3, "text": "<formatted>", "isCorrect": false },
+        { "id": 4, "text": "<pf>", "isCorrect": false }
+      ],
+      "answer": "<pre>",
+      "explanation": "The &lt;pre&gt; HTML element represents preformatted text which is to be presented exactly as written in the HTML file. \nThe text is typically rendered using a non-proportional, or monospaced, font. \nWhitespace inside this element is displayed as written. \nThis element is useful for displaying code or poetry where the visual formatting of spaces is important. \nBy default, its default display value is block.",
+      "source": "ChatGPT",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre"
+    },
+    {
+      "id": 47,
+      "text": "What is the purpose of the ”data-*’’ attribute in HTML?",
+      "hasOptions": false,
+      "answer": "The data=* attribute allows to store additional information about an HTML element that is not otherwise displayed on the page, but may be useful to scripts that interact with the page.",
+      "explanation": "The data=* attribute is a custom data attribute, that allow proprietary information to be exchanged between the HTML and its DOM representation by scripts. (HTMLElement.dataset)\n The dataset version of the attribute name removes the ”data-’’ prefix and converts the rest of the name from kebab-case to camelCase. \nFor example, element.getAttribute(”data-test”) is equivalent to element.dataset.test",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions"
+    },
+    {
+      "id": 48,
+      "text": "Which HTML element is used to display a scalar measurement within a known range?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "<scale>", "isCorrect": false },
+        { "id": 2, "text": "<range>", "isCorrect": false },
+        { "id": 3, "text": "<meter>", "isCorrect": true },
+        { "id": 4, "text": "<progress>", "isCorrect": false }
+      ],
+      "answer": "<meter>",
+      "explanation": "The &lt;meter&gt; HTML element represents either a scalar value within a known range or a fractional value. \nThis is used to indicate a measurement within a known range, such as disk usage, the relevance of a query result, or the fraction of a voting population in an election. \nFor example: &lt;meter id=”fuel” min=”0” max=”100” low=”33” high=”66” optimum=”80” value=”50”&gt;Result = 50/100&lt;/meter&gt; \nThe browser may color the meter”s bar differently depending on whether the value is less than or equal to the optimum value or it is near low or high value. \nUnlike &lt;meter&gt; tag, the &lt;progress&gt; HTML element displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "source": "ChatGPT",
+      "source2": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter"
+    },
+    {
+      "id": 49,
+      "text": "What are HTML entities?",
+      "hasOptions": false,
+      "answer": "HTML entities are codes used to represent special characters in HTML that cannot be easily typed or displayed. \nFor example: &amp represents (&)",
+      "explanation": "The term ”HTML Entity” is used as a synonym for a character reference — a pattern of characters that can represent another character in the HTML. \nCorresponding code to the specific character is between an ampersand (&amp;) and a semicolon (;). For example: `&amp;copy;` = copyright symbol (©).",
+      "source": "https://github.com/Saran-pariyar/100_Days_Of_Frontend_Interview_Questions",
+      "source2": "https://developer.mozilla.org/en-US/docs/Glossary/Entity"
+    },
+    {
+      "id": 50,
+      "text": "What is ARIA in HTML? Name 3 examples",
+      "hasOptions": false,
+      "answer": "ARIA is a set of roles & attributes that define ways to make web content and applications accessible to users with disabilities who use assistive technologies. \\3 ARIA attributes: n1) aria-expanded (to indicate if a control is expanded or collapsed, and whether or not the controlled elements are displayed or hidden). \n2) aria-selected (indicates the current ”selected” state for gridcell, option, row and tab roles) \n3)aria-live (indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect from the live region).",
+      "explanation": "ARIA = Accessible Rich Internet Applications, it is a set of roles and attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities. \nIt supplements HTML so that interactions and widgets commonly used in applications can be passed to assistive technologies when there is not otherwise a mechanism.  \nThere are 4 categories of ARIA states and properties: \n1) Widget attributes (aria-checked; aria-expanded; aria-hidden). \n2) Live region attributes (aria-atomic; aria-live). \n3) Drag-and-drop attributes (aria-dropeffect; aria-grabbed). \n4) Relationship attributes (aria-description; aria-owns). \nThe first rule of ARIA use is: ”If you can use a native HTML element or attribute with the semantics and behavior you require already built in, \ninstead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so. \n**In WebAim”s survey of over 1 mln home pages, they found that Home pages with ARIA present averaged 41% more detected errors than those without ARIA. \nWhile ARIA is designed to make web pages more accessible, if used incorrectly, it can do more harm than good.**",
+      "source": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA"
+    }
+  ],
+  "node": [
+    {
+      "id": 1,
+      "text": "What is Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "JavaScript framework", "isCorrect": false },
+        {
+          "id": 2,
+          "text": "Cross-platform JavaScript runtime environment",
+          "isCorrect": true
+        },
+        { "id": 3, "text": "A programming language", "isCorrect": false },
+        { "id": 4, "text": "A database management system", "isCorrect": false }
+      ],
+      "answer": "Cross-platform JavaScript runtime environment",
+      "explanation": "Node.js is an open-source and cross-platform JavaScript runtime environment. \nNode.js runs the V8 JavaScript engine, the core of Google Chrome, outside of the browser. \nThis allows Node.js to be very performant. \nWith Node.js frontend developers that write JavaScript for the browser are now able to write the server-side code \nin addition to the client-side code without the need to learn a completely different language.",
+      "source": "Claude 3.5 Sonnet",
+      "source2": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+    },
+    {
+      "id": 2,
+      "text": "Which of the following is NOT a core module in Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "fs", "isCorrect": false },
+        { "id": 2, "text": "http", "isCorrect": false },
+        { "id": 3, "text": "path", "isCorrect": false },
+        { "id": 4, "text": "express", "isCorrect": true }
+      ],
+      "answer": "express",
+      "explanation": "Node.js has many built-in modules that are part of the platform and come with Node.js installation. \nThe core modules are defined within the Node.js source and are located in the lib/ folder. \nCore modules can be identified using the node: prefix, for instance: require('node:http'). \nSome of the important core modules in Node.js are: \n1)http = creates an HTTP server in Node.js. \n2)assert = set of assertion functions useful for testing. \n3)fs = used to handle file system. \n4)path = includes methods to deal with file paths. \n5)process = provides information and control about the current Node.js process. \n6)os = provides information about the operating system. \n7)querystring = utility used for parsing and formatting URL query strings. \n8)url = module provides utilities for URL resolution and parsing. \nExpress is a popular web application framework for Node.js, but it is not a core module. \nCore modules in Node.js are modules that are shipped with Node.js and can be used without any further installation. \n",
+      "source": "https://nodejs.org/docs/v20.15.1/api/modules.html#core-modules",
+      "source2": "https://www.geeksforgeeks.org/node-js-modules/"
+    },
+    {
+      "id": 3,
+      "text": "What is the purpose of the ”fs” module in Node.js?",
+      "hasOptions": false,
+      "answer": "The ”fs” module in Node.js is used to handle file operations such as reading, writing, updating, deleting, and renaming files.",
+      "explanation": "The File System module in Node.js provides an API for interacting with the file system on the computer. \nIt allows to perform various operations such as reading from and writing to files, \ncreating and deleting files and directories, modifying file permissions, and more. \nTo use the File System module, you need to require it in your Node.js application: const fs = require('fs'); \nThe ”fs” module provides both asynchronous and synchronous methods for file system operations.",
+      "source": "https://nodejs.org/docs/v20.15.1/api/fs.html",
+      "source2": "https://medium.com/@masterrajpatel/file-system-fs-in-node-js-246de180f609"
+    }, 
+    {
+      "id": 4,
+      "text": "What does the npm command stand for?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Node Package Module", "isCorrect": false },
+        { "id": 2, "text": "Node Project Manager", "isCorrect": false },
+        { "id": 3, "text": "Node Package Manager", "isCorrect": true },
+        { "id": 4, "text": "Node Project Module", "isCorrect": false }
+      ],
+      "answer": "Node Package Manager",
+      "explanation": "npm is the standard package manager for Node.js. \nIt was created in 2009 as an open source project to help JavaScript developers easily share packaged modules of code. \nThe npm Registry is a public collection of packages of open-source code for Node.js, front-end web apps, mobile apps, robots, routers, and countless other needs of the JavaScript community. \nIn September 2022 over 2.1 million packages were reported being listed in the npm registry, making it the biggest single language code repository on Earth",
+      "source": "GitHub Copilot",
+      "source2": "https://docs.npmjs.com/about-npm"
+    }, 
+    {
+      "id": 5,
+      "text": "What is the purpose of the ”http” module in Node.js?",
+      "hasOptions": false,
+      "answer": "The ”http” module in Node.js is used to create an HTTP server that listens for server connections and HTTP requests.",
+      "explanation": "The ”http” module is a built-in HTTP interface in Node.js, that is designed to support many features of the protocol which have been traditionally difficult to use. \nThe ”http” module, containing both a client and server.",
+      "source": "https://nodejs.org/docs/v20.15.1/api/http.html",
+      "source2": "GitHub Copilot"
+    }, 
+    {
+      "id": 6,
+      "text": "How can you make a Node.js application listen on port 3000?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "server.bind(3000)", "isCorrect": false},
+        { "id": 2, "text": "app.start(3000)", "isCorrect": false },
+        { "id": 3, "text": "app.listen(3000)", "isCorrect": true},
+        { "id": 4, "text": "http.createServer(3000)", "isCorrect": false }
+      ],
+      "answer": "app.listen(3000)",
+      "explanation": "To make a Node.js application listen on a specific port, you can use the app.listen() method. \nThis method binds and listens for connections on the specified host and port.",
+      "source": "GitHub Copilot"
+    },
+    {
+      "id": 7,
+      "text": "What is the difference between Node.js and the Browser?",
+      "hasOptions": false,
+      "answer": "Both use JavaScript as their programming language, but despite the similarities, there is a huge difference between them. \nNode.js is used for server-side or backend programming while in the case of browsers, we use JavaScript for the client side. \nAlso, Browser has a graphical user interface for users to make a smooth interaction, and for Node.js we have to run it on CLI or terminal.",
+      "explanation": "Both the browser and Node.js use JavaScript as their programming language. \nBuilding apps that run in the browser is completely different from building a Node.js application. \nDespite the fact that it's always JavaScript, there are some key differences that make the experience radically different. \nFrom the perspective of a frontend developer who extensively uses JavaScript, Node.js apps bring with them a huge advantage: the comfort of programming everything - the frontend and the backend - in a single language. \nIn the browser, most of the time what you are doing is interacting with the DOM, or other Web Platform APIs like Cookies. Those do not exist in Node.js, of course. \nYou don't have the ”document”, ”window” and all the other objects that are provided by the browser. \nAnd in the browser, we don't have all the nice APIs that Node.js provides through its modules, like the filesystem access functionality. \n2)Another big difference is that in Node.js you control the environment. \nUnless you are building an open source application that anyone can deploy anywhere, you know which version of Node.js you will run the application on. \nCompared to the browser environment, where you don't get the luxury to choose what browser your visitors will use, this is very convenient. \n3)Another difference is that Node.js supports both the CommonJS and ES module systems (since Node.js v12), while in the browser, we are starting to see the ES Modules standard being implemented.\nIn practice, this means that you can use both require() and import in Node.js, while you are limited to import in the browser.",
+      "source": "https://nodejs.org/en/learn/getting-started/differences-between-nodejs-and-the-browser",
+      "source2": "https://www.geeksforgeeks.org/nodejs-vs-browser/"
+    }, 
+    {
+      "id": 8,
+      "text": "What is the purpose of the package.json file in a Node.js project?",
+      "hasOptions": false,
+      "answer": "package.json file is used to define project properties and dependencies",
+      "explanation": "The package.json file is core to the Node.js ecosystem and is a fundamental part of understanding and working with Node.js, npm, and even modern JavaScript. \nThis file is used as a manifest, storing information about applications, modules, packages, and more. \nThe Basics of package.json: \n1)Identifying Metadata Inside package.json: \nname: the name of the package. \nversion: the version of the package. \nlicense: is used to note the module that the package.json file describes  \nauthor: author of the package \ndescription: a brief description of the package. \n2)Functional metadata inside package.json: \nmain: the primary entry point to the package. \nscripts: a set of scripts that can be run using npm. \ndependencies: each entry in the dependencies property includes the name and version of other packages required to run this package. \ndevDependencies: is almost identical to the dependencies property in terms of structure. \nThe main difference: this property is commonly used to define the dependencies the module needs to run in development.",
+      "source": "https://nodesource.com/blog/the-basics-of-package-json/"
+    }, 
+    {
+      "id": 9,
+      "text": "Which of the following is used to handle asynchronous operations in Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "Promises", "isCorrect": false },
+        { "id": 2, "text": "Callbacks", "isCorrect": false },
+        { "id": 3, "text": "Async/Await", "isCorrect": false },
+        { "id": 4, "text": "All of the above", "isCorrect": true }
+      ],
+      "answer": "All of the above",
+      "explanation": "Node.js provides multiple ways to handle asynchronous operations. \n1)Callbacks: Callbacks are the most common way to handle asynchronous operations in Node.js. \n2)Promises: Promises are a more modern way to handle asynchronous operations. \n3)Async/Await: Async/Await is a modern way to handle asynchronous operations in Node.js. \nIt is built on top of Promises and provides a more readable and concise syntax for handling asynchronous operations. \nAsync/Await is built on top of Promises and provides a more readable and concise syntax for handling asynchronous operations. \nIt allows you to write asynchronous code that looks synchronous, making it easier to read and understand.",
+      "source":"GitHub Copilot"
+    },
+    {
+      "id": 10,
+      "text": "What is the corepack in Node.js?",
+      "hasOptions": false,
+      "answer": "Corepack is an experimental tool to help with managing versions of your package managers.",
+      "explanation": "Corepack is a zero-runtime-dependency script, which acts as a bridge between Node.js projects and package managers used to develop them. \nThe main function of Corepack is to facilitate version management of package managers in Node.js projects. \nCorepack comes with Node.js, but its functionality is disabled by default, as it is still an experimental tool. \nTo enable Corepack, developers should use the 'corepack enable' command in the terminal. \nCorepack acts as a middle layer between Node.js and package managers. \nWhen a developer uses a command, for example, 'pnpm install', Corepack intercepts the call, checks which version of the package manager is specified in the project, and uses it. \nIf the version is not installed, Corepack automatically downloads it. \nCorepack has a built-in caching mechanism that helps to avoid redownloads. \nIt also provides a way to specify the version of the package manager in the whole project (or for individual working directories). \nCorepack is designed to simplify the management of package managers in Node.js projects and improve the overall development experience. \n\n**Corepack is focused on alternative package managers such as yarn and pnpm. \nIts use with npm can cause difficulties, since npm is enabled in Node.js by default. \nIf the project does not specify a specific version of yarn in the package.json file and Corepack decides to use the latest known version (for example, 4.31.3), this can cause difficulties if the project was originally developed using 3.36.1 and some dependencies are incompatible with the newer version.**",
+      "source": "https://nodejs.org/docs/v20.15.1/api/corepack.html"
+    },
+    {
+      "id": 11,
+      "text": "What is the purpose of the Buffer class in Node.js?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "To handle binary data", "isCorrect": true },
+        { "id": 2, "text": "To handle JSON data", "isCorrect": false },
+        { "id": 3, "text": "To store data in memory", "isCorrect": false },
+        { "id": 4, "text": "To compress array data", "isCorrect": false }
+      ],
+      "answer": "To handle binary data",
+      "explanation": "The Buffer class is a global type for dealing with binary data directly. \nIn Node, the Buffer class plays a crucial role in handling binary data, allowing developers to work with raw binary data directly. \nThe Buffer class provides a way to create, manipulate, and convert binary data efficiently, making it essential for various tasks such as: \nfile I/O, network communication, cryptography, and data manipulation. \nThe primary purpose of the Buffer class is to facilitate the manipulation of binary data in NodeJS. \nIt provides methods for creating buffers from strings, arrays, or other buffers, \nas well as for reading, writing, and modifying the contents of buffers. \nThe Buffer class supports various character encodings, including UTF-8, ASCII, Base64, and hexadecimal. \nDevelopers can specify the encoding format when converting between buffers and strings using the toString() and from() methods. \n\nFor example: \nconst buffer = Buffer.from('Hello, World!', 'utf8') \nconsole.log(buffer.toString('hex')) // 48656c6c6f2c20576f726c6421 \nIn this example, we create a buffer from a string and then convert it to a hexadecimal string. \nconsole.log(buffer) // <Buffer 48 65 6c 6c 6f 2c 20 57 6f 72 6c 64 21> \nBy leveraging the capabilities of the Buffer class, developers can work with binary data effectively and build high-performance, data-intensive applications in NodeJS",
+      "source": "https://nodejs.org/docs/v20.15.1/api/buffer.html#class-buffer",
+      "source2": "https://www.geeksforgeeks.org/what-is-the-purpose-of-the-buffer-class-in-node/"
+    }
+  ]
+}
